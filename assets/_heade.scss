@@ -54,7 +54,9 @@ header{
         }
     }
 }
-
+.openModal{
+    display: flex;
+}
 
 @media (max-width: 768px){
     header{
@@ -69,13 +71,16 @@ header{
 
         z-index: 9999;
 
+
        }
 
         .ajustHeader{
+            
+           
             .menuNav{
                 background-color:$primary-color;
                 width: 300px;
-                display: flex;
+                display: none;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
@@ -99,14 +104,13 @@ header{
                     flex-direction: column;
                     width: 100%;
                     text-align: center;
-                    li{
-                        a{
-
-                        }
-                    }
                 }
+           
             }
         }
 
     }
+
+   
 }
+

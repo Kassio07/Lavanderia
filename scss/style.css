@@ -47,6 +47,10 @@ header .ajustHeader .menuNav ul li a:hover::after {
   position: absolute;
 }
 
+.openModal {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   header .btnHamburguer {
     display: flex;
@@ -61,7 +65,7 @@ header .ajustHeader .menuNav ul li a:hover::after {
   header .ajustHeader .menuNav {
     background-color: #008374;
     width: 300px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
