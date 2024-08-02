@@ -7,11 +7,84 @@
 header {
   background-color: #008374;
 }
+header .btnHamburguer {
+  display: none;
+}
 header .ajustHeader {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+  height: 100px;
+}
+header .ajustHeader .logo img {
+  width: 110px;
+  margin-top: 20px;
+}
+header .ajustHeader .menuNav .logoMobil {
+  display: none;
+}
+header .ajustHeader .menuNav ul {
+  display: flex;
+  gap: 35px;
+}
+header .ajustHeader .menuNav ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 1s;
+  position: relative;
+  transition: 1s;
+}
+header .ajustHeader .menuNav ul li a:hover::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #36CDBC;
+  position: absolute;
 }
 
+@media (max-width: 768px) {
+  header .btnHamburguer {
+    display: flex;
+    position: fixed;
+    right: 15px;
+    top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #36CDBC;
+    z-index: 9999;
+  }
+  header .ajustHeader .menuNav {
+    background-color: #008374;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  }
+  header .ajustHeader .menuNav .logoMobil {
+    display: flex;
+    margin: 0 0 50px 0;
+  }
+  header .ajustHeader .menuNav .logoMobil img {
+    width: 100px;
+  }
+  header .ajustHeader .menuNav ul {
+    display: inline-block;
+    flex-direction: column;
+  }
+  header .ajustHeader .menuNav ul li {
+    background-color: red;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;

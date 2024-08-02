@@ -1,0 +1,109 @@
+header{
+    background-color:$primary-color;
+    .btnHamburguer{
+        display: none;
+    }
+    .ajustHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10px;
+        height: 100px;
+        .logo{
+
+
+            img{
+                width: 110px;
+                margin-top: 20px;
+            }
+            
+        }
+
+        .menuNav{
+            .logoMobil{
+                display: none;
+            }
+
+            ul{
+                display: flex;
+                gap: 35px;
+
+                li{
+
+
+                    a{
+                        color: $white;
+                        font-size: 1.2rem;
+                        transition:all 1s;
+                        position: relative;
+                        transition: 1s;
+                    }
+                    a:hover::after{
+                        content: "";
+                        width: 40px;
+                        height: 3px;
+                        bottom: 0;
+                        left: 0;
+                        border-radius: 10px;
+                        background-color: $primary-light;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    header{
+       .btnHamburguer{
+        display: flex;
+        position: fixed;
+        right: 15px;
+        top: 30px;
+        font-size: 30px;
+        cursor: pointer;
+        color: $primary-light;
+
+        z-index: 9999;
+
+       }
+
+        .ajustHeader{
+            .menuNav{
+                background-color:$primary-color;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                height: 100vh;
+                right: 0;
+                top: 0;
+                .logoMobil{
+                    display: flex;
+                    margin: 0 0 50px 0;
+                    img{
+                        width: 100px;
+                    }
+                }
+
+                ul{display: inline-block;
+
+                    flex-direction: column;
+
+                    li{
+                        background-color: red;
+                        a{
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
