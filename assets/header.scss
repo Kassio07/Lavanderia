@@ -1,0 +1,10 @@
+header{
+    background-color:$primary-color;
+
+
+    .ajustHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

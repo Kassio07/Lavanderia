@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
-h1 {
-  color: red;
+header {
+  background-color: #008374;
+}
+header .ajustHeader {
+  display: flex;
+  flex-direction: row;
 }
 
 body {
@@ -13,6 +17,11 @@ body {
   font-style: normal;
   overflow-x: hidden;
   position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 a {
