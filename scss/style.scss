@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import"assets/header.scss";
+@import"assets/color.scss";
+
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    background-color: #000;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}
