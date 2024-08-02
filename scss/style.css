@@ -72,17 +72,19 @@ header .ajustHeader .menuNav ul li a:hover::after {
   }
   header .ajustHeader .menuNav .logoMobil {
     display: flex;
+    justify-content: center;
     margin: 0 0 50px 0;
+    width: 100%;
+    position: relative;
   }
   header .ajustHeader .menuNav .logoMobil img {
-    width: 100px;
+    width: 35%;
   }
   header .ajustHeader .menuNav ul {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
-  }
-  header .ajustHeader .menuNav ul li {
-    background-color: red;
+    width: 100%;
+    text-align: center;
   }
 }
 body {

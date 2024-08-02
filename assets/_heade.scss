@@ -85,18 +85,21 @@ header{
                 top: 0;
                 .logoMobil{
                     display: flex;
+                    justify-content: center ;
                     margin: 0 0 50px 0;
+                    width: 100%;
+                    position: relative;
                     img{
-                        width: 100px;
+                        width: 35%;
                     }
                 }
 
-                ul{display: inline-block;
-
+                ul{
+                    display: flex;
                     flex-direction: column;
-
+                    width: 100%;
+                    text-align: center;
                     li{
-                        background-color: red;
                         a{
 
                         }
