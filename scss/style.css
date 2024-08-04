@@ -47,10 +47,6 @@ header .ajustHeader .menuNav ul li a:hover::after {
   position: absolute;
 }
 
-.openModal {
-  display: flex;
-}
-
 @media (max-width: 768px) {
   header .btnHamburguer {
     display: flex;
@@ -64,8 +60,8 @@ header .ajustHeader .menuNav ul li a:hover::after {
   }
   header .ajustHeader .menuNav {
     background-color: #008374;
-    width: 300px;
-    display: none;
+    width: 0px;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -73,22 +69,26 @@ header .ajustHeader .menuNav ul li a:hover::after {
     height: 100vh;
     right: 0;
     top: 0;
+    transition: ease 0.5s;
   }
   header .ajustHeader .menuNav .logoMobil {
-    display: flex;
-    justify-content: center;
+    display: block;
+    text-align: center;
     margin: 0 0 50px 0;
     width: 100%;
     position: relative;
   }
   header .ajustHeader .menuNav .logoMobil img {
-    width: 35%;
+    width: 80px;
   }
   header .ajustHeader .menuNav ul {
     display: flex;
     flex-direction: column;
     width: 100%;
     text-align: center;
+  }
+  header .ajustHeader .openModal {
+    width: 300px;
   }
 }
 body {
