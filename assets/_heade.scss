@@ -14,10 +14,15 @@ header {
       img {
         width: 110px;
         margin-top: 20px;
+        display: block;
       }
+    }
+    .noneImg{
+      display: none;
     }
 
     .menuNav {
+
       .logoMobil {
         display: none;
       }
@@ -47,6 +52,9 @@ header {
         }
       }
     }
+    .copy{
+        display: none;
+    }
   }
 }
 
@@ -67,8 +75,8 @@ header {
     .ajustHeader {
       .menuNav {
         background-color: $primary-color;
-        width: 0px;
-        display: flex;
+        width: 300px;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -76,8 +84,7 @@ header {
         height: 100vh;
         right: 0;
         top: 0;
-        transition: ease 0.5s;
-        
+
         .logoMobil {
           display:block;
           text-align: center;
@@ -101,9 +108,20 @@ header {
             }
           }
         }
+        .copy{
+            display: block;
+            width: 300px;
+            text-align: center;
+            color: $primary-light;
+            position: absolute;
+            bottom: 50px;
+        }
       }
       .openModal {
-        width: 300px;
+        // width: 300px;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
       }
     }
   }

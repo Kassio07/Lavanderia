@@ -21,6 +21,10 @@ header .ajustHeader {
 header .ajustHeader .logo img {
   width: 110px;
   margin-top: 20px;
+  display: block;
+}
+header .ajustHeader .noneImg {
+  display: none;
 }
 header .ajustHeader .menuNav .logoMobil {
   display: none;
@@ -46,6 +50,9 @@ header .ajustHeader .menuNav ul li a:hover::after {
   background-color: #36CDBC;
   position: absolute;
 }
+header .ajustHeader .copy {
+  display: none;
+}
 
 @media (max-width: 768px) {
   header .btnHamburguer {
@@ -60,8 +67,8 @@ header .ajustHeader .menuNav ul li a:hover::after {
   }
   header .ajustHeader .menuNav {
     background-color: #008374;
-    width: 0px;
-    display: flex;
+    width: 300px;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -69,7 +76,6 @@ header .ajustHeader .menuNav ul li a:hover::after {
     height: 100vh;
     right: 0;
     top: 0;
-    transition: ease 0.5s;
   }
   header .ajustHeader .menuNav .logoMobil {
     display: block;
@@ -87,8 +93,18 @@ header .ajustHeader .menuNav ul li a:hover::after {
     width: 100%;
     text-align: center;
   }
-  header .ajustHeader .openModal {
+  header .ajustHeader .menuNav .copy {
+    display: block;
     width: 300px;
+    text-align: center;
+    color: #36CDBC;
+    position: absolute;
+    bottom: 50px;
+  }
+  header .ajustHeader .openModal {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 }
 body {
