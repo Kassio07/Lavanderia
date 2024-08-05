@@ -71,7 +71,6 @@ header .ajustHeader .copy {
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: fixed;
     height: 100vh;
     right: 0;
@@ -80,12 +79,12 @@ header .ajustHeader .copy {
   header .ajustHeader .menuNav .logoMobil {
     display: block;
     text-align: center;
-    margin: 0 0 50px 0;
+    margin: 70px 0 50px 0;
     width: 100%;
     position: relative;
   }
   header .ajustHeader .menuNav .logoMobil img {
-    width: 80px;
+    width: 100px;
   }
   header .ajustHeader .menuNav ul {
     display: flex;
