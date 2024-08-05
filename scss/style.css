@@ -65,6 +65,9 @@ header .ajustHeader .copy {
     color: #36CDBC;
     z-index: 9999;
   }
+  header .btnHamburguer .fa-circle-xmark {
+    display: none;
+  }
   header .ajustHeader .menuNav {
     background-color: #008374;
     width: 300px;
@@ -102,8 +105,6 @@ header .ajustHeader .copy {
   }
   header .ajustHeader .openModal {
     display: flex;
-    opacity: 1;
-    visibility: visible;
   }
 }
 body {

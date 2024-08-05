@@ -70,6 +70,9 @@ header {
       color: $primary-light;
 
       z-index: 9999;
+      .fa-circle-xmark{
+        display: none;
+      }
     }
 
     .ajustHeader {
@@ -120,8 +123,8 @@ header {
       .openModal {
         // width: 300px;
         display: flex;
-        opacity: 1;
-        visibility: visible;
+        // opacity: 1;
+        // visibility: visible;
       }
     }
   }
