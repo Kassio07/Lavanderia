@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-header {
+header .headerFixed {
+  position: fixed;
+  width: 100%;
   background-color: #008374;
 }
 header .btnHamburguer {
@@ -53,6 +55,39 @@ header .ajustHeader .menuNav ul li a:hover::after {
 header .ajustHeader .copy {
   display: none;
 }
+header .headerInfo {
+  display: flex;
+  flex-direction: row;
+  height: 120vh;
+  padding-top: 120px;
+}
+header .headerInfo .header {
+  display: flex;
+  flex-direction: row;
+  height: 120vh;
+  padding-top: 120px;
+}
+header .headerInfo .header .col1 {
+  flex: 1;
+}
+header .headerInfo .header .col1 .titleHeader {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+header .headerInfo .header .col1 .subtitleHeader {
+  font-size: 22px;
+  font-weight: 400;
+  color: #7f8c8d;
+}
+header .headerInfo .header .col1 .contactHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+header .headerInfo .header .col2 {
+  flex: 1;
+}
 
 @media (max-width: 768px) {
   header .btnHamburguer {
@@ -64,6 +99,11 @@ header .ajustHeader .copy {
     cursor: pointer;
     color: #36CDBC;
     z-index: 9999;
+    animation-name: animationBtbMenu;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
   }
   header .btnHamburguer .fa-circle-xmark {
     display: none;
@@ -78,6 +118,7 @@ header .ajustHeader .copy {
     height: 100vh;
     right: 0;
     top: 0;
+    transition: all 0.5s linear;
   }
   header .ajustHeader .menuNav .logoMobil {
     display: block;
@@ -105,6 +146,14 @@ header .ajustHeader .copy {
   }
   header .ajustHeader .openModal {
     display: flex;
+  }
+}
+@keyframes animationBtbMenu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
 body {

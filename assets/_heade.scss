@@ -1,5 +1,9 @@
 header {
-  background-color: $primary-color;
+  .headerFixed {
+    position: fixed;
+    width: 100%;
+    background-color: $primary-color;
+  }
   .btnHamburguer {
     display: none;
   }
@@ -17,12 +21,11 @@ header {
         display: block;
       }
     }
-    .noneImg{
+    .noneImg {
       display: none;
     }
 
     .menuNav {
-
       .logoMobil {
         display: none;
       }
@@ -52,8 +55,48 @@ header {
         }
       }
     }
-    .copy{
-        display: none;
+    .copy {
+      display: none;
+    }
+  }
+
+  .headerInfo {
+    display: flex;
+    flex-direction: row;
+    height: 120vh;
+    // background-color: $primary-color;
+    padding-top: 120px;
+    .header {
+      display: flex;
+      flex-direction: row;
+      height: 120vh;
+      // background-color: $primary-color;
+      padding-top: 120px;
+      .col1,
+      .col2 {
+      }
+      .col1 {
+        flex: 1;
+        .titleHeader {
+          color: $white;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        .subtitleHeader {
+          font-size: 22px;
+          font-weight: 400;
+          color: $gray-dark;
+        }
+
+        .contactHeader {
+          display: flex;
+          flex-direction: row;
+          gap: 50px;
+        }
+      }
+      .col2 {
+        flex: 1;
+      }
     }
   }
 }
@@ -70,7 +113,13 @@ header {
       color: $primary-light;
 
       z-index: 9999;
-      .fa-circle-xmark{
+
+      animation-name: animationBtbMenu;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 4;
+      animation-direction: alternate;
+      .fa-circle-xmark {
         display: none;
       }
     }
@@ -87,9 +136,9 @@ header {
         height: 100vh;
         right: 0;
         top: 0;
-
+        transition: all 0.5s linear;
         .logoMobil {
-          display:block;
+          display: block;
           text-align: center;
           margin: 70px 0 50px 0;
           width: 100%;
@@ -107,17 +156,16 @@ header {
 
           li {
             a {
-
             }
           }
         }
-        .copy{
-            display: block;
-            width: 300px;
-            text-align: center;
-            color: $primary-light;
-            position: absolute;
-            bottom: 50px;
+        .copy {
+          display: block;
+          width: 300px;
+          text-align: center;
+          color: $primary-light;
+          position: absolute;
+          bottom: 50px;
         }
       }
       .openModal {
@@ -127,5 +175,14 @@ header {
         // visibility: visible;
       }
     }
+  }
+}
+
+@keyframes animationBtbMenu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
