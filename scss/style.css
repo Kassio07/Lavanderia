@@ -49,44 +49,88 @@ header .ajustHeader .menuNav ul li a:hover::after {
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  background-color: #36CDBC;
+  background-color: #00ADEF;
   position: absolute;
 }
 header .ajustHeader .copy {
   display: none;
 }
 header .headerInfo {
-  display: flex;
-  flex-direction: row;
-  height: 120vh;
-  padding-top: 120px;
+  padding-top: 90px;
+  background-color: #008374;
 }
 header .headerInfo .header {
   display: flex;
   flex-direction: row;
-  height: 120vh;
-  padding-top: 120px;
+  height: 110vh;
+  padding-top: 90px;
 }
 header .headerInfo .header .col1 {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 header .headerInfo .header .col1 .titleHeader {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 header .headerInfo .header .col1 .subtitleHeader {
-  font-size: 22px;
+  font-size: 1rem;
   font-weight: 400;
-  color: #7f8c8d;
+  color: rgba(255, 255, 255, 0.7058823529);
 }
 header .headerInfo .header .col1 .contactHeader {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 50px;
 }
+header .headerInfo .header .col1 .contactHeader .contact button {
+  background-color: transparent;
+  border: 2px solid #36CDBC;
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: ease-in 0.5s;
+}
+header .headerInfo .header .col1 .contactHeader .contact button:hover {
+  border: 2px solid #00ADEF;
+  box-sizing: border-box;
+}
+header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #00ADEF;
+  cursor: pointer;
+}
+header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span i {
+  font-size: 2.2rem;
+  color: #00ADEF;
+}
+header .headerInfo .header .col1 .contactHeader .videoheader .modal-video .video {
+  background-color: #008374;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header .headerInfo .header .col2 {
-  flex: 1;
+  flex: 0.7;
 }
 
 @media (max-width: 768px) {
