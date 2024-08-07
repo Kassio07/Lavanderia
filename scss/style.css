@@ -8,6 +8,7 @@ header .headerFixed {
   position: fixed;
   width: 100%;
   background-color: #008374;
+  z-index: 98;
 }
 header .btnHamburguer {
   display: none;
@@ -56,12 +57,14 @@ header .ajustHeader .copy {
   display: none;
 }
 header .headerInfo {
-  padding-top: 90px;
+  padding-top: 70px;
   background-color: #008374;
 }
 header .headerInfo .header {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
   height: 110vh;
   padding-top: 90px;
 }
@@ -74,7 +77,7 @@ header .headerInfo .header .col1 {
 }
 header .headerInfo .header .col1 .titleHeader {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -82,6 +85,7 @@ header .headerInfo .header .col1 .subtitleHeader {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7058823529);
+  margin-bottom: 15px;
 }
 header .headerInfo .header .col1 .contactHeader {
   display: flex;
@@ -124,10 +128,23 @@ header .headerInfo .header .col1 .contactHeader .videoheader .modal-video .video
   left: 0px;
   width: 100%;
   height: 100%;
-  z-index: 999;
-  display: flex;
+  transition: ease 5s;
+  display: none;
   align-items: center;
   justify-content: center;
+  z-index: 99;
+}
+header .headerInfo .header .col1 .contactHeader .videoheader .modal-video .video .fa-circle-xmark {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 7%;
+  font-size: 30px;
+  cursor: pointer;
+  color: #36CDBC;
+}
+header .headerInfo .header .col1 .contactHeader .videoheader .modal-video .close {
+  display: flex;
 }
 header .headerInfo .header .col2 {
   flex: 0.7;
@@ -208,8 +225,11 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 10px;
 }
 
 a {

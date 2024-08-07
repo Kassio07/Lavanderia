@@ -23,3 +23,25 @@ hamburguer.addEventListener("click", () => {
         }
     },200)
 });
+
+const frame = c('.video iframe');
+function openClose(){
+    const video = c('.video');
+    video.style.opacity = 0;
+    setTimeout(()=>{
+        video.classList.toggle('close');
+        video.style.opacity = 1;
+    },500)
+}
+
+c('.btnVideo').addEventListener('click', ()=>{
+    c('.headerFixed').style.display = 'none'
+    openClose();
+});
+c('#closeVideo').addEventListener('click', ()=>{
+    c('.headerFixed').style.display = 'block'
+
+    let src = frame.src;
+    frame.src = src;
+    openClose();
+});

@@ -17,8 +17,11 @@ body{
 }
 
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 10px;
 }
 
 a{
