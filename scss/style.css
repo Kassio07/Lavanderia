@@ -65,7 +65,7 @@ header .headerInfo .header {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  height: 110vh;
+  height: 100vh;
   padding-top: 90px;
 }
 header .headerInfo .header .col1 {
@@ -148,6 +148,33 @@ header .headerInfo .header .col1 .contactHeader .videoheader .modal-video .close
 }
 header .headerInfo .header .col2 {
   flex: 0.7;
+}
+header .headerInfo .cardsHeaderContainer {
+  position: absolute;
+  top: 82vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+header .headerInfo .cardsHeaderContainer .card-item {
+  flex: 1;
+  background-color: #36CDBC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 50px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+header .headerInfo .cardsHeaderContainer .card-item div img {
+  width: 100px;
+}
+header .headerInfo .cardsHeaderContainer .card-item div h3 {
+  color: #008374;
 }
 
 @media (max-width: 768px) {
