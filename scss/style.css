@@ -256,9 +256,6 @@ header .close {
     color: rgba(255, 255, 255, 0.7058823529);
     margin-bottom: 15px;
   }
-  header .headerInfo .header .col2 {
-    flex: 0.4;
-  }
   header .headerInfo .header .col2 .imgHeader {
     display: flex;
     justify-content: flex-start;
@@ -270,6 +267,7 @@ header .close {
     top: 84vh;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 7px;
   }
   header .headerInfo .cardsHeaderContainer .card-item {
@@ -277,6 +275,41 @@ header .close {
   }
   header .headerInfo .cardsHeaderContainer .card-item div h3 {
     font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  header .headerInfo .header {
+    height: 230vh;
+    padding-top: 50px;
+    flex-direction: column-reverse;
+  }
+  header .headerInfo .header .col1 {
+    gap: 10px;
+  }
+  header .headerInfo .header .col1 .titleHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  header .headerInfo .header .col1 .subtitleHeader {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7058823529);
+    margin-bottom: 15px;
+  }
+  header .headerInfo .header .col2 {
+    flex: 0.1;
+  }
+  header .headerInfo .header .col2 .imgHeader img {
+    width: 100%;
+  }
+  header .headerInfo .cardsHeaderContainer {
+    top: 84vh;
+    flex-direction: column;
+    gap: 7px;
+  }
+  header .headerInfo .cardsHeaderContainer .card-item {
+    width: 77%;
   }
 }
 @keyframes animationBtbMenu {
