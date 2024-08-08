@@ -159,12 +159,15 @@ header {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        padding: 40px 10px;
+        padding: 25px 10px;
         border-radius: 15px;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img {
-            width: 80px;
+            width: 150px;
           }
 
           h3 {

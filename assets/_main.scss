@@ -1,3 +1,68 @@
 main{
     padding-top: 200px;
+
+    .about{
+
+
+        .titleSection{
+            width: 100%;
+            text-align: start;
+            padding-bottom: 80px;
+            h3{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                position: relative;
+                color: $secondary-color;
+            }
+            h3::before{
+                content: " ";
+                position: absolute;
+                bottom: 0;
+                width: 40px;
+                height: 4px;
+                border-radius: 10px;
+                background-color:$primary-color;
+
+            }
+        }
+
+        .colsConatinerSectionOn{
+            display: flex;
+            flex-direction: row;
+
+            .colSection-on{
+                flex: 1;
+
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                .titleLocation{
+                   
+                    p{
+                        font-weight: 400;
+                        font-size: 1.1rem;
+                        strong{
+                            font-weight: 600;
+                            color: $secondary-color;
+                        }
+                    }
+                }
+
+                .textLocation{
+                    width: 100%;
+                    
+                    p{
+                        font-size: 0.9rem;
+
+                    }
+                }
+            }
+
+            .colSection-two{
+                flex: 1;
+            }   
+        }
+    }
 }
