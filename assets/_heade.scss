@@ -4,6 +4,8 @@ header {
     width: 100%;
     background-color: $primary-color;
     z-index: 98;
+
+    
   }
   .btnHamburguer {
     display: none;
@@ -237,6 +239,7 @@ header {
         top: 50%;
         border-radius: 20px;
         transition: all 0.5s linear;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
         .logoMobil {
           display: block;
           text-align: center;
