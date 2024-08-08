@@ -280,7 +280,6 @@ header .close {
 @media (max-width: 576px) {
   header .headerInfo .header {
     height: 230vh;
-    padding-top: 50px;
     flex-direction: column-reverse;
   }
   header .headerInfo .header .col1 {
@@ -329,6 +328,7 @@ body {
   font-style: normal;
   overflow-x: hidden;
   position: relative;
+  box-sizing: border-box;
 }
 
 .container {
@@ -336,7 +336,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0 10px;
+  padding: 0 10px;
 }
 
 a {
