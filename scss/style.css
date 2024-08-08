@@ -131,7 +131,8 @@ header .headerInfo .cardsHeaderContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 17px;
 }
 header .headerInfo .cardsHeaderContainer .card-item {
   flex: 1;
@@ -140,13 +141,13 @@ header .headerInfo .cardsHeaderContainer .card-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 50px 30px;
+  gap: 10px;
+  padding: 40px 10px;
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 header .headerInfo .cardsHeaderContainer .card-item div img {
-  width: 100px;
+  width: 80px;
 }
 header .headerInfo .cardsHeaderContainer .card-item div h3 {
   color: #008374;
@@ -197,15 +198,17 @@ header .close {
     display: none;
   }
   header .ajustHeader .menuNav {
-    background-color: #008374;
-    width: 300px;
+    background-color: #36CDBC;
+    width: 80%;
     display: none;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    height: 100vh;
-    right: 0;
-    top: 0;
+    height: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    border-radius: 20px;
     transition: all 0.5s linear;
   }
   header .ajustHeader .menuNav .logoMobil {
@@ -234,6 +237,46 @@ header .close {
   }
   header .ajustHeader .openModal {
     display: flex;
+  }
+  header .headerInfo .header {
+    padding-top: 50px;
+    flex-direction: column-reverse;
+  }
+  header .headerInfo .header .col1 {
+    gap: 10px;
+  }
+  header .headerInfo .header .col1 .titleHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  header .headerInfo .header .col1 .subtitleHeader {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7058823529);
+    margin-bottom: 15px;
+  }
+  header .headerInfo .header .col2 {
+    flex: 0.4;
+  }
+  header .headerInfo .header .col2 .imgHeader {
+    display: flex;
+    justify-content: flex-start;
+  }
+  header .headerInfo .header .col2 .imgHeader img {
+    width: 80%;
+  }
+  header .headerInfo .cardsHeaderContainer {
+    top: 84vh;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+  header .headerInfo .cardsHeaderContainer .card-item {
+    padding: 35px 5px;
+  }
+  header .headerInfo .cardsHeaderContainer .card-item div h3 {
+    font-size: 1rem;
   }
 }
 @keyframes animationBtbMenu {
