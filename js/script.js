@@ -24,7 +24,7 @@ hamburguer.addEventListener("click", () => {
     },200)
 });
 
-const frame = c('.video iframe');
+const frame = c('.video video');
 function openClose(){
     const video = c('.video');
     video.style.opacity = 0;
