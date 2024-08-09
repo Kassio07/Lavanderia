@@ -373,6 +373,88 @@ main .about .colsConatinerSectionOn .colSection-on .textLocation {
 main .about .colsConatinerSectionOn .colSection-on .textLocation p {
   font-size: 0.9rem;
 }
+main .about .colsConatinerSectionOn .colSection-on .slider {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides {
+  background-color: red;
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides input {
+  display: none;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio4:checked ~ .first {
+  margin-left: -75%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide {
+  width: 25%;
+  position: relative;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
+  width: 800px;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div {
+  border: 2px solid #00ADEF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: 1s;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto {
+  position: absolute;
+  width: 600px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation {
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation .manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation .manual-btn:hover {
+  background-color: #fff;
+}
 main .about .colsConatinerSectionOn .colSection-two {
   flex: 1;
 }
