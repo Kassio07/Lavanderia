@@ -99,26 +99,6 @@ header {
           flex-direction: row;
           align-items: center;
           gap: 50px;
-          .contact {
-            button {
-              // background-color: $primary-light;
-              background-color: transparent;
-              border: 2px solid $primary-light;
-              width: 150px;
-              height: 45px;
-              border-radius: 10px;
-              font-size: 1rem;
-              font-weight: 100;
-              color: $white;
-              letter-spacing: 2px;
-              transition: ease-in 0.5s;
-            }
-            button:hover {
-              border: 2px solid $secondary-color;
-              box-sizing: border-box;
-            }
-          }
-
           .videoheader {
             .modal-video {
               span {
@@ -200,6 +180,26 @@ header {
   }
   .close {
     display: flex;
+  }
+}
+
+.contact {
+  button {
+    // background-color: $primary-light;
+    background-color: transparent;
+    border: 2px solid $primary-light;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: $white;
+    letter-spacing: 2px;
+    transition: ease-in 0.5s;
+  }
+  button:hover {
+    border: 2px solid $secondary-color;
+    box-sizing: border-box;
   }
 }
 
