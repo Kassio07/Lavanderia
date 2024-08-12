@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 header .headerFixed {
@@ -327,7 +328,6 @@ header .close {
 }
 main {
   padding-top: 200px;
-  padding-bottom: 400px;
 }
 main .about .titleSection {
   width: 100%;
@@ -555,8 +555,6 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  overflow-x: hidden;
-  position: relative;
   box-sizing: border-box;
 }
 
