@@ -48,6 +48,8 @@ c("#closeVideo").addEventListener("click", () => {
   openClose();
 });
 
+
+
 // Slider About
 
 let count = 1;

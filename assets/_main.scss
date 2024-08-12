@@ -1,11 +1,11 @@
 main {
   padding-top: 200px;
-
+  padding-bottom: 400px;
   .about {
     .titleSection {
       width: 100%;
       text-align: start;
-      padding-bottom: 80px;
+      padding-bottom: 50px;
       h3 {
         font-size: 1.8rem;
         text-transform: uppercase;
@@ -37,8 +37,9 @@ main {
 
         .titleLocation {
           p {
-            font-weight: 400;
+            font-weight: 300;
             font-size: 1.1rem;
+            // text-transform: uppercase;
             strong {
               font-weight: 600;
               color: $secondary-color;
@@ -51,15 +52,21 @@ main {
 
           p {
             font-size: 0.9rem;
+            font-weight: 300;
+            text-indent: 30px;
+            strong{
+              font-weight: normal;
+            }
           }
         }
 
         .slider {
-            width: 600px;
+            max-width: 600px;
             height: 400px;
             overflow: hidden;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             .slides {
-                background-color: red;
               width: 400%;
               height: 400px;
               display: flex;

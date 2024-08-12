@@ -164,7 +164,6 @@ header .video {
   left: 0px;
   width: 100%;
   height: 100%;
-  transition: ease 5s;
   display: none;
   align-items: center;
   justify-content: center;
@@ -327,11 +326,12 @@ header .close {
 }
 main {
   padding-top: 200px;
+  padding-bottom: 400px;
 }
 main .about .titleSection {
   width: 100%;
   text-align: start;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 main .about .titleSection h3 {
   font-size: 1.8rem;
@@ -360,7 +360,7 @@ main .about .colsConatinerSectionOn .colSection-on {
   gap: 40px;
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.1rem;
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p strong {
@@ -372,14 +372,20 @@ main .about .colsConatinerSectionOn .colSection-on .textLocation {
 }
 main .about .colsConatinerSectionOn .colSection-on .textLocation p {
   font-size: 0.9rem;
+  font-weight: 300;
+  text-indent: 30px;
+}
+main .about .colsConatinerSectionOn .colSection-on .textLocation p strong {
+  font-weight: normal;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider {
-  width: 600px;
+  max-width: 600px;
   height: 400px;
   overflow: hidden;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides {
-  background-color: red;
   width: 400%;
   height: 400px;
   display: flex;
