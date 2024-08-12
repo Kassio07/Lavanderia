@@ -115,27 +115,20 @@
       </div>
       <div class="video">
         <i class="fa-solid fa-circle-xmark" id="closeVideo"></i>
-        <!-- <iframe
+        <!-- <iframe id="videoFrame"
           width="80%" 
           height="80%"
-          src="https://www.youtube.com/embed/v-R7X9ps7RU?si=_m89CzAb5bapVFIX"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer;autoplay='1'; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe> -->
-        <video
-          width="90%"
-          height="80%"
-          controls
-          title="Higienização e Lavanderia NS Clean"
-        >
-          <source src="img/higienização-de-estofados.mp4" type="video/mp4" />
-        </video>
-        <!-- <video src="img/higienização-de-estofados.mp4" autoplay controls>
 
-        </video> -->
+        <video width="80%" height="80%" title="Higienização e lavandeira Ns Clean" controls>
+          <source type="video/mp4" id="videoFrame">
+          Seu navegador não suporta o elemento do vídeo.
+        </video>
       </div>
     </header>
     <main>
@@ -204,7 +197,6 @@
                   <label for="radio3" class="manual-btn"></label>
                   <label for="radio4" class="manual-btn"></label>
                 </div>
-
               </div>
               <div class="textLocation">
                 <p>

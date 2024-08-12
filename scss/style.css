@@ -273,7 +273,7 @@ header .close {
     top: 84vh;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 7px;
   }
   header .headerInfo .cardsHeaderContainer .card-item {

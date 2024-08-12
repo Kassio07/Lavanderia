@@ -24,13 +24,16 @@ hamburguer.addEventListener("click", () => {
   }, 200);
 });
 
-const frame = c(".video video");
+// Video header
+
+let frame = c(".video video");
 function openClose() {
-  const video = c(".video");
-  video.style.opacity = 0;
+  let videoContainer = c(".video");
+  let iframeUrl = 'img/higienização-de-estofados.mp4';
+  frame.src = iframeUrl;
+  frame.removeAttribute('autoplay');
   setTimeout(() => {
-    video.classList.toggle("close");
-    video.style.opacity = 1;
+    videoContainer.classList.toggle("close")
   }, 500);
 }
 
@@ -38,13 +41,14 @@ c(".btnVideo").addEventListener("click", () => {
   c(".headerFixed").style.display = "none";
   openClose();
 });
+
+
 c("#closeVideo").addEventListener("click", () => {
   c(".headerFixed").style.display = "block";
-
-  let src = frame.src;
-  frame.src = src;
   openClose();
 });
+
+// Slider About
 
 let count = 1;
 document.getElementById("radio1").checked = true;
