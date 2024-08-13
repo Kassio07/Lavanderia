@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 header .headerFixed {
@@ -61,7 +60,7 @@ header .headerInfo {
   padding-top: 70px;
   background-color: #008374;
 }
-header .headerInfo .header {
+header .headerInfo .overflow .header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -69,32 +68,32 @@ header .headerInfo .header {
   height: 100vh;
   padding-top: 90px;
 }
-header .headerInfo .header .col1 {
+header .headerInfo .overflow .header .col1 {
   flex: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
-header .headerInfo .header .col1 .titleHeader {
+header .headerInfo .overflow .header .col1 .titleHeader {
   color: #fff;
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-header .headerInfo .header .col1 .subtitleHeader {
+header .headerInfo .overflow .header .col1 .subtitleHeader {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7058823529);
   margin-bottom: 15px;
 }
-header .headerInfo .header .col1 .contactHeader {
+header .headerInfo .overflow .header .col1 .contactHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
 }
-header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span {
+header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-video span {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,14 +101,14 @@ header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span {
   color: #00ADEF;
   cursor: pointer;
 }
-header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span i {
+header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-video span i {
   font-size: 2.2rem;
   color: #00ADEF;
 }
-header .headerInfo .header .col2 {
+header .headerInfo .overflow .header .col2 {
   flex: 0.7;
 }
-header .headerInfo .cardsHeaderContainer {
+header .headerInfo .overflow .cardsHeaderContainer {
   position: absolute;
   top: 82vh;
   width: 100%;
@@ -119,7 +118,7 @@ header .headerInfo .cardsHeaderContainer {
   flex-wrap: wrap;
   gap: 17px;
 }
-header .headerInfo .cardsHeaderContainer .card-item {
+header .headerInfo .overflow .cardsHeaderContainer .card-item {
   flex: 1;
   background-color: #36CDBC;
   display: flex;
@@ -131,15 +130,15 @@ header .headerInfo .cardsHeaderContainer .card-item {
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-header .headerInfo .cardsHeaderContainer .card-item div {
+header .headerInfo .overflow .cardsHeaderContainer .card-item div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .headerInfo .cardsHeaderContainer .card-item div img {
+header .headerInfo .overflow .cardsHeaderContainer .card-item div img {
   width: 150px;
 }
-header .headerInfo .cardsHeaderContainer .card-item div h3 {
+header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
   color: #008374;
 }
 header .video {
@@ -245,76 +244,76 @@ header .close {
   header .ajustHeader .openModal {
     display: flex;
   }
-  header .headerInfo .header {
+  header .headerInfo .overflow .header {
     padding-top: 50px;
     flex-direction: column-reverse;
   }
-  header .headerInfo .header .col1 {
+  header .headerInfo .overflow .header .col1 {
     gap: 10px;
   }
-  header .headerInfo .header .col1 .titleHeader {
+  header .headerInfo .overflow .header .col1 .titleHeader {
     color: #fff;
     font-size: 1.5rem;
     margin-top: 40px;
   }
-  header .headerInfo .header .col1 .subtitleHeader {
+  header .headerInfo .overflow .header .col1 .subtitleHeader {
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7058823529);
     margin-bottom: 15px;
   }
-  header .headerInfo .header .col2 .imgHeader {
+  header .headerInfo .overflow .header .col2 .imgHeader {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
-  header .headerInfo .header .col2 .imgHeader img {
-    width: 80%;
+  header .headerInfo .overflow .header .col2 .imgHeader img {
+    width: 100%;
   }
-  header .headerInfo .cardsHeaderContainer {
+  header .headerInfo .overflow .cardsHeaderContainer {
     top: 84vh;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     gap: 7px;
   }
-  header .headerInfo .cardsHeaderContainer .card-item {
+  header .headerInfo .overflow .cardsHeaderContainer .card-item {
     padding: 35px 5px;
   }
-  header .headerInfo .cardsHeaderContainer .card-item div h3 {
+  header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
-  header .headerInfo .header {
+  header .headerInfo .overflow .header {
     height: 230vh;
     flex-direction: column-reverse;
   }
-  header .headerInfo .header .col1 {
+  header .headerInfo .overflow .header .col1 {
     gap: 10px;
   }
-  header .headerInfo .header .col1 .titleHeader {
+  header .headerInfo .overflow .header .col1 .titleHeader {
     color: #fff;
     font-size: 1.5rem;
     margin-top: 40px;
   }
-  header .headerInfo .header .col1 .subtitleHeader {
+  header .headerInfo .overflow .header .col1 .subtitleHeader {
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7058823529);
     margin-bottom: 15px;
   }
-  header .headerInfo .header .col2 {
+  header .headerInfo .overflow .header .col2 {
     flex: 0.1;
   }
-  header .headerInfo .header .col2 .imgHeader img {
+  header .headerInfo .overflow .header .col2 .imgHeader img {
     width: 100%;
   }
-  header .headerInfo .cardsHeaderContainer {
+  header .headerInfo .overflow .cardsHeaderContainer {
     top: 84vh;
     flex-direction: column;
     gap: 7px;
   }
-  header .headerInfo .cardsHeaderContainer .card-item {
+  header .headerInfo .overflow .cardsHeaderContainer .card-item {
     width: 77%;
   }
 }
@@ -328,6 +327,7 @@ header .close {
 }
 main {
   padding-top: 200px;
+  overflow-x: hidden;
 }
 main .about .titleSection {
   width: 100%;
@@ -556,6 +556,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .container {

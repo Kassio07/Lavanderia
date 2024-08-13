@@ -4,8 +4,6 @@ header {
     width: 100%;
     background-color: $primary-color;
     z-index: 98;
-
-    
   }
   .btnHamburguer {
     display: none;
@@ -17,6 +15,7 @@ header {
     align-items: center;
     margin: 0 10px;
     height: 100px;
+
     .logo {
       img {
         width: 110px;
@@ -66,92 +65,95 @@ header {
   .headerInfo {
     padding-top: 70px;
     background-color: $primary-color;
-
-    .header {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: center;
-      height: 100vh;
-      padding-top: 90px;
-
-      .col1 {
-        flex: 1;
+    .overflow {
+      .header {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 20px;
-        .titleHeader {
-          color: $white;
-          font-size: 2.2rem;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
-        .subtitleHeader {
-          font-size: 1rem;
-          font-weight: 400;
-          color: #ffffffb4;
-          margin-bottom: 15px;
-        }
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 90px;
 
-        .contactHeader {
+        .col1 {
+          flex: 1;
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 50px;
-          .videoheader {
-            .modal-video {
-              span {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 10px;
-                color: $secondary-color;
-                cursor: pointer;
-                i {
-                  font-size: 2.2rem;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .titleHeader {
+            color: $white;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+          .subtitleHeader {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #ffffffb4;
+            margin-bottom: 15px;
+          }
+
+          .contactHeader {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+            .videoheader {
+              .modal-video {
+                span {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  gap: 10px;
                   color: $secondary-color;
+                  cursor: pointer;
+                  i {
+                    font-size: 2.2rem;
+                    color: $secondary-color;
+                  }
                 }
               }
             }
           }
         }
+        .col2 {
+          flex: 0.7;
+        }
       }
-      .col2 {
-        flex: 0.7;
-      }
-    }
 
-    .cardsHeaderContainer {
-      position: absolute;
-      top: 82vh;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 17px;
-      .card-item {
-        flex: 1;
-        background-color: $primary-light;
+      .cardsHeaderContainer {
+        position: absolute;
+        top: 82vh;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        padding: 25px 10px;
-        border-radius: 15px;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-        div {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 17px;
+
+        .card-item {
+          flex: 1;
+          background-color: $primary-light;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          img {
-            width: 150px;
-          }
+          gap: 10px;
+          padding: 25px 10px;
+          border-radius: 15px;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 150px;
+            }
 
-          h3 {
-            color: $primary-color;
+            h3 {
+              color: $primary-color;
+            }
           }
         }
       }
@@ -241,7 +243,8 @@ header {
         top: 50%;
         border-radius: 20px;
         transition: all 0.5s linear;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
         .logoMobil {
           display: block;
           text-align: center;
@@ -258,11 +261,6 @@ header {
           flex-direction: column;
           width: 100%;
           text-align: center;
-
-          li {
-            a {
-            }
-          }
         }
         .copy {
           display: block;
@@ -274,60 +272,57 @@ header {
         }
       }
       .openModal {
-        // width: 300px;
         display: flex;
-        // opacity: 1;
-        // visibility: visible;
       }
     }
 
-    .headerInfo{
+    .headerInfo {
+      .overflow {
+        .header {
+          padding-top: 50px;
+          flex-direction: column-reverse;
 
-      .header{
+          .col1 {
+            gap: 10px;
 
-        padding-top: 50px;
-        flex-direction: column-reverse;
-        .col1{
-          gap: 10px;
-          .titleHeader {
-            color: $white;
-            font-size: 1.5rem;
-            margin-top: 40px;
+            .titleHeader {
+              color: $white;
+              font-size: 1.5rem;
+              margin-top: 40px;
+            }
+            .subtitleHeader {
+              font-size: 1rem;
+              font-weight: 400;
+              color: #ffffffb4;
+              margin-bottom: 15px;
+            }
           }
-          .subtitleHeader {
-            font-size: 1rem;
-            font-weight: 400;
-            color: #ffffffb4;
-            margin-bottom: 15px;
-          }
-        }
 
-        .col2{
-
-          .imgHeader{
-            display: flex;
-            justify-content: flex-start;
-            img{
-              width: 80%;
+          .col2 {
+            .imgHeader {
+              display: flex;
+              justify-content: center;
+              img {
+                width: 100%;
+              }
             }
           }
         }
-      }
 
-      .cardsHeaderContainer{
-        top: 84vh;
-        // flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
+        .cardsHeaderContainer {
+          top: 84vh;
+          // flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
 
-        gap: 7px;
-        .card-item{
-          padding: 35px 5px;
-          div{
-            
-            h3{
-              font-size: 1rem;
+          gap: 7px;
+          .card-item {
+            padding: 35px 5px;
+            div {
+              h3 {
+                font-size: 1rem;
+              }
             }
           }
         }
@@ -336,45 +331,45 @@ header {
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   header {
-    .headerInfo{
-
-      .header{
-        height: 230vh;
-        flex-direction: column-reverse;
-        .col1{
-          gap: 10px;
-          .titleHeader {
-            color: $white;
-            font-size: 1.5rem;
-            margin-top: 40px;
+    .headerInfo {
+      .overflow {
+        .header {
+          height: 230vh;
+          flex-direction: column-reverse;
+          .col1 {
+            gap: 10px;
+            .titleHeader {
+              color: $white;
+              font-size: 1.5rem;
+              margin-top: 40px;
+            }
+            .subtitleHeader {
+              font-size: 1rem;
+              font-weight: 400;
+              color: #ffffffb4;
+              margin-bottom: 15px;
+            }
           }
-          .subtitleHeader {
-            font-size: 1rem;
-            font-weight: 400;
-            color: #ffffffb4;
-            margin-bottom: 15px;
-          }
-        }
-        .col2{
-          flex: 0.1;
+          .col2 {
+            flex: 0.1;
 
-          .imgHeader{
-
-            img{
-              width: 100%;
+            .imgHeader {
+              img {
+                width: 100%;
+              }
             }
           }
         }
-      }
 
-      .cardsHeaderContainer{
-        top: 84vh;
-        flex-direction: column;
-        gap: 7px;
-        .card-item{
-          width: 77%;
+        .cardsHeaderContainer {
+          top: 84vh;
+          flex-direction: column;
+          gap: 7px;
+          .card-item {
+            width: 77%;
+          }
         }
       }
     }
