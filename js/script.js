@@ -65,3 +65,23 @@ function nextImage() {
   }
   document.getElementById("radio"+ count).checked = true;
 }
+
+// Event scrolly
+
+cs('nav a').forEach(link =>{
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetSection = c(targetId);
+
+    const offsetPosition = targetSection.offsetTop - 500;
+
+   targetSection.scrollIntoView({
+    behavior: 'smooth'
+   })
+  });
+});
+
+
+

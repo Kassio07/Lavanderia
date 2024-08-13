@@ -76,10 +76,15 @@ header .headerInfo .overflow .header .col1 {
   gap: 20px;
 }
 header .headerInfo .overflow .header .col1 .titleHeader {
+  display: flex;
+  justify-content: flex-start;
+}
+header .headerInfo .overflow .header .col1 .titleHeader h1 {
   color: #fff;
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
 header .headerInfo .overflow .header .col1 .subtitleHeader {
   font-size: 1rem;

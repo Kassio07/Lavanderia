@@ -82,10 +82,15 @@ header {
           gap: 20px;
 
           .titleHeader {
+            display: flex;
+            justify-content: flex-start;
+            h1{
             color: $white;
             font-size: 2.2rem;
             font-weight: bold;
             text-transform: uppercase;
+            text-align: center;
+            }
           }
           .subtitleHeader {
             font-size: 1rem;
