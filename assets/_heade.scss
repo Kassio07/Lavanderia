@@ -341,14 +341,16 @@ header {
     .headerInfo {
       .overflow {
         .header {
-          height: 230vh;
+          height: 270vh;
           flex-direction: column-reverse;
           .col1 {
-            gap: 10px;
+            gap: 20px;
             .titleHeader {
+              h1{
               color: $white;
-              font-size: 1.5rem;
+              font-size: 1.9rem;
               margin-top: 40px;
+              }
             }
             .subtitleHeader {
               font-size: 1rem;
@@ -369,7 +371,7 @@ header {
         }
 
         .cardsHeaderContainer {
-          top: 84vh;
+          top: 116vh;
           flex-direction: column;
           gap: 7px;
           .card-item {

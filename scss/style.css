@@ -290,15 +290,15 @@ header .close {
 }
 @media (max-width: 576px) {
   header .headerInfo .overflow .header {
-    height: 230vh;
+    height: 270vh;
     flex-direction: column-reverse;
   }
   header .headerInfo .overflow .header .col1 {
-    gap: 10px;
+    gap: 20px;
   }
-  header .headerInfo .overflow .header .col1 .titleHeader {
+  header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin-top: 40px;
   }
   header .headerInfo .overflow .header .col1 .subtitleHeader {
@@ -314,7 +314,7 @@ header .close {
     width: 100%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
-    top: 84vh;
+    top: 116vh;
     flex-direction: column;
     gap: 7px;
   }
