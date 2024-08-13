@@ -289,7 +289,7 @@ header .close {
 }
 @media (max-width: 576px) {
   header .headerInfo .overflow .header {
-    height: 270vh;
+    height: 258vh;
     flex-direction: column-reverse;
   }
   header .headerInfo .overflow .header .col1 {
@@ -313,7 +313,7 @@ header .close {
     width: 100%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
-    top: 116vh;
+    top: 105vh;
     flex-direction: column;
     gap: 7px;
   }
