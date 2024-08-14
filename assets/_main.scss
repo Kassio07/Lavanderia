@@ -96,6 +96,7 @@ main {
               transition: 1s;
               img {
                 width: 100%;
+                height: 100%;
               }
             }
 
@@ -248,11 +249,18 @@ main {
       .colsConatinerSectionOn {
         flex-direction: column;
         .colSection-on{
-  
+          
           .titleLocation{
   
             p{
               font-size: 16px;
+            }
+          }
+
+          .slider{
+            margin-right: 10px;
+            .slides{
+
             }
           }
         }

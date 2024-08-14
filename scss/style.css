@@ -423,6 +423,7 @@ main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide {
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
   width: 100%;
+  height: 100%;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div {
   border: 2px solid #00ADEF;
@@ -538,6 +539,9 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   }
   main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
     font-size: 16px;
+  }
+  main .about .colsConatinerSectionOn .colSection-on .slider {
+    margin-right: 10px;
   }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
     font-size: 1rem;
