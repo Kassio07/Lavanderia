@@ -83,7 +83,6 @@ header .headerInfo .overflow .header .col1 .titleHeader h1 {
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
 }
 header .headerInfo .overflow .header .col1 .subtitleHeader {
   font-size: 1rem;
@@ -251,13 +250,14 @@ header .close {
   header .headerInfo .overflow .header {
     padding-top: 50px;
     flex-direction: column-reverse;
+    height: 100vh;
   }
   header .headerInfo .overflow .header .col1 {
     gap: 10px;
   }
-  header .headerInfo .overflow .header .col1 .titleHeader {
+  header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 40px;
   }
   header .headerInfo .overflow .header .col1 .subtitleHeader {
@@ -271,7 +271,7 @@ header .close {
     justify-content: center;
   }
   header .headerInfo .overflow .header .col2 .imgHeader img {
-    width: 100%;
+    width: 60%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
     top: 84vh;
@@ -283,13 +283,19 @@ header .close {
   header .headerInfo .overflow .cardsHeaderContainer .card-item {
     padding: 35px 5px;
   }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item div {
+    height: 50px;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item div img {
+    width: 80px;
+  }
   header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
   header .headerInfo .overflow .header {
-    height: 258vh;
+    height: 223vh;
     flex-direction: column-reverse;
   }
   header .headerInfo .overflow .header .col1 {
@@ -564,7 +570,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
