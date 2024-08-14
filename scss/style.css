@@ -120,6 +120,7 @@ header .headerInfo .overflow .cardsHeaderContainer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 17px;
+  padding-right: 10px;
 }
 header .headerInfo .overflow .cardsHeaderContainer .card-item {
   flex: 1;
