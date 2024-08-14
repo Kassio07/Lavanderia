@@ -558,6 +558,9 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
     color: #008374;
   }
+  main .about .colsConatinerSectionOn .colSection-two .history {
+    margin-right: 10px;
+  }
   main .about .colsConatinerSectionOn .colSection-two .btnHistory {
     color: red;
     width: 250px;
