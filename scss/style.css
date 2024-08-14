@@ -564,19 +564,11 @@ body {
 }
 
 .container {
-<<<<<<< HEAD
   max-width: 1200px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 5px;
-=======
-  max-width: 1300px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0 10px;
->>>>>>> dd35b5545faafd6836a4cb7979da0c0eb5257478
 }
 
 a {
