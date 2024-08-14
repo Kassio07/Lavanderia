@@ -8,6 +8,7 @@ header .headerFixed {
   position: fixed;
   width: 100%;
   background-color: #008374;
+  z-index: 98;
 }
 header .btnHamburguer {
   display: none;
@@ -17,7 +18,6 @@ header .ajustHeader {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 10px;
   height: 100px;
 }
 header .ajustHeader .logo img {
@@ -56,40 +56,121 @@ header .ajustHeader .copy {
   display: none;
 }
 header .headerInfo {
-  padding-top: 90px;
+  padding-top: 70px;
   background-color: #008374;
 }
-header .headerInfo .header {
+header .headerInfo .overflow .header {
   display: flex;
   flex-direction: row;
-  height: 110vh;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
   padding-top: 90px;
 }
-header .headerInfo .header .col1 {
+header .headerInfo .overflow .header .col1 {
   flex: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
-header .headerInfo .header .col1 .titleHeader {
+header .headerInfo .overflow .header .col1 .titleHeader {
+  display: flex;
+  justify-content: flex-start;
+}
+header .headerInfo .overflow .header .col1 .titleHeader h1 {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 }
-header .headerInfo .header .col1 .subtitleHeader {
+header .headerInfo .overflow .header .col1 .subtitleHeader {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7058823529);
+  margin-bottom: 15px;
 }
-header .headerInfo .header .col1 .contactHeader {
+header .headerInfo .overflow .header .col1 .contactHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
 }
-header .headerInfo .header .col1 .contactHeader .contact button {
+header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-video span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #00ADEF;
+  cursor: pointer;
+}
+header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-video span i {
+  font-size: 2.2rem;
+  color: #00ADEF;
+}
+header .headerInfo .overflow .header .col2 {
+  flex: 0.7;
+}
+header .headerInfo .overflow .cardsHeaderContainer {
+  position: absolute;
+  top: 82vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+header .headerInfo .overflow .cardsHeaderContainer .card-item {
+  flex: 1;
+  background-color: #36CDBC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 10px;
+  border-radius: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+header .headerInfo .overflow .cardsHeaderContainer .card-item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headerInfo .overflow .cardsHeaderContainer .card-item div img {
+  width: 150px;
+}
+header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
+  color: #008374;
+}
+header .video {
+  background-color: #008374;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+header .video .fa-circle-xmark {
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 7%;
+  font-size: 30px;
+  cursor: pointer;
+  color: #36CDBC;
+}
+header .close {
+  display: flex;
+}
+
+.contact button {
   background-color: transparent;
   border: 2px solid #36CDBC;
   width: 150px;
@@ -101,36 +182,9 @@ header .headerInfo .header .col1 .contactHeader .contact button {
   letter-spacing: 2px;
   transition: ease-in 0.5s;
 }
-header .headerInfo .header .col1 .contactHeader .contact button:hover {
+.contact button:hover {
   border: 2px solid #00ADEF;
   box-sizing: border-box;
-}
-header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  color: #00ADEF;
-  cursor: pointer;
-}
-header .headerInfo .header .col1 .contactHeader .videoheader .modal-video span i {
-  font-size: 2.2rem;
-  color: #00ADEF;
-}
-header .headerInfo .header .col1 .contactHeader .videoheader .modal-video .video {
-  background-color: #008374;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .headerInfo .header .col2 {
-  flex: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -153,16 +207,19 @@ header .headerInfo .header .col2 {
     display: none;
   }
   header .ajustHeader .menuNav {
-    background-color: #008374;
-    width: 300px;
+    background-color: #36CDBC;
+    width: 80%;
     display: none;
     flex-direction: column;
     align-items: center;
     position: fixed;
-    height: 100vh;
-    right: 0;
-    top: 0;
+    height: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    border-radius: 20px;
     transition: all 0.5s linear;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   }
   header .ajustHeader .menuNav .logoMobil {
     display: block;
@@ -191,6 +248,78 @@ header .headerInfo .header .col2 {
   header .ajustHeader .openModal {
     display: flex;
   }
+  header .headerInfo .overflow .header {
+    padding-top: 50px;
+    flex-direction: column-reverse;
+  }
+  header .headerInfo .overflow .header .col1 {
+    gap: 10px;
+  }
+  header .headerInfo .overflow .header .col1 .titleHeader {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  header .headerInfo .overflow .header .col1 .subtitleHeader {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7058823529);
+    margin-bottom: 15px;
+  }
+  header .headerInfo .overflow .header .col2 .imgHeader {
+    display: flex;
+    justify-content: center;
+  }
+  header .headerInfo .overflow .header .col2 .imgHeader img {
+    width: 100%;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer {
+    top: 84vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 7px;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item {
+    padding: 35px 5px;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  header .headerInfo .overflow .header {
+    height: 258vh;
+    flex-direction: column-reverse;
+  }
+  header .headerInfo .overflow .header .col1 {
+    gap: 20px;
+  }
+  header .headerInfo .overflow .header .col1 .titleHeader h1 {
+    color: #fff;
+    font-size: 1.9rem;
+    margin-top: 40px;
+  }
+  header .headerInfo .overflow .header .col1 .subtitleHeader {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7058823529);
+    margin-bottom: 15px;
+  }
+  header .headerInfo .overflow .header .col2 {
+    flex: 0.1;
+  }
+  header .headerInfo .overflow .header .col2 .imgHeader img {
+    width: 100%;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer {
+    top: 105vh;
+    flex-direction: column;
+    gap: 7px;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item {
+    width: 100%;
+  }
 }
 @keyframes animationBtbMenu {
   0% {
@@ -200,19 +329,254 @@ header .headerInfo .header .col2 {
     transform: translateY(-20px);
   }
 }
+main {
+  padding-top: 200px;
+  overflow-x: hidden;
+}
+main .about .titleSection {
+  width: 100%;
+  text-align: start;
+  padding-bottom: 50px;
+}
+main .about .titleSection h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  color: #00ADEF;
+}
+main .about .titleSection h3::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #008374;
+}
+main .about .colsConatinerSectionOn {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+main .about .colsConatinerSectionOn .colSection-on {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+main .about .colsConatinerSectionOn .colSection-on .titleLocation p strong {
+  font-weight: 600;
+  color: #008374;
+}
+main .about .colsConatinerSectionOn .colSection-on .textLocation {
+  width: 100%;
+}
+main .about .colsConatinerSectionOn .colSection-on .textLocation p {
+  font-size: 1rem;
+  font-weight: 300;
+  text-indent: 30px;
+}
+main .about .colsConatinerSectionOn .colSection-on .textLocation p strong {
+  font-weight: normal;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider {
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides {
+  width: 400%;
+  display: flex;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides input {
+  display: none;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio4:checked ~ .first {
+  margin-left: -75%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide {
+  width: 25%;
+  transition: 1s;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
+  width: 100%;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div {
+  border: 2px solid #00ADEF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: 1s;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+  bottom: 26.5px;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #00ADEF;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation .manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation .manual-btn:hover {
+  background-color: #fff;
+}
+main .about .colsConatinerSectionOn .colSection-two {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
+  color: #008374;
+}
+main .about .colsConatinerSectionOn .colSection-two .listService ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .about .colsConatinerSectionOn .colSection-two .listService ul li i {
+  padding-right: 10px;
+  color: #00ADEF;
+  font-size: 20px;
+}
+main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
+  color: #008374;
+}
+main .about .colsConatinerSectionOn .colSection-two .btnHistory {
+  color: red;
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
+    font-size: 16px;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
+    font-size: 1rem;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
+    color: #008374;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .listService ul {
+    gap: 8px;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .listService ul li {
+    font-size: 0.9rem;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
+    color: #008374;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .btnHistory {
+    color: red;
+    width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    padding-top: 120px;
+  }
+  main .about .colsConatinerSectionOn {
+    flex-direction: column;
+  }
+  main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
+    font-size: 16px;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
+    font-size: 1rem;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
+    color: #008374;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .listService ul {
+    gap: 8px;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .listService ul li {
+    font-size: 0.9rem;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
+    color: #008374;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .btnHistory {
+    color: red;
+    width: 250px;
+  }
+  main .about .colsConatinerSectionOn .colSection-two .btnHistory {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  box-sizing: border-box;
   overflow-x: hidden;
-  position: relative;
 }
 
 .container {
+<<<<<<< HEAD
   max-width: 1200px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 5px;
+=======
+  max-width: 1300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 10px;
+>>>>>>> dd35b5545faafd6836a4cb7979da0c0eb5257478
 }
 
 a {

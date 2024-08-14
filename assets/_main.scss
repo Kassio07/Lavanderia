@@ -1,0 +1,293 @@
+main {
+  padding-top: 200px;
+  overflow-x: hidden;   
+
+  .about {
+    .titleSection {
+      width: 100%;
+      text-align: start;
+      padding-bottom: 50px;
+      h3 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        color: $secondary-color;
+      }
+      h3::before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        width: 40px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: $primary-color;
+      }
+    }
+
+    .colsConatinerSectionOn {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+
+      .colSection-on {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .titleLocation {
+          p {
+            font-weight: 400;
+            font-size: 1.3rem;
+            // text-transform: uppercase;
+            strong {
+              font-weight: 600;
+              color: $primary-color;
+            }
+          }
+        }
+
+        .textLocation {
+          width: 100%;
+
+          p {
+            font-size: 1rem;
+            font-weight: 300;
+            text-indent: 30px;
+            strong {
+              font-weight: normal;
+            }
+          }
+        }
+
+        .slider {
+          max-width: 600px;
+          // height: 400px;
+          overflow: hidden;
+          border-radius: 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          position: relative;
+          .slides {
+            width: 400%;
+            // height: 400px;
+            display: flex;
+            input {
+              display: none;
+            }
+
+            #radio1:checked ~ .first {
+              margin-left: 0;
+            }
+            #radio2:checked ~ .first {
+              margin-left: -25%;
+            }
+            #radio3:checked ~ .first {
+              margin-left: -50%;
+            }
+            #radio4:checked ~ .first {
+              margin-left: -75%;
+            }
+
+            .slide {
+              width: 25%;
+              // position: relative;
+              transition: 1s;
+              img {
+                width: 100%;
+              }
+            }
+
+            .navigation-auto div {
+              border: 2px solid $secondary-color;
+              padding: 5px;
+              border-radius: 10px;
+              cursor: pointer;
+              transform: 1s;
+            }
+            .navigation-auto {
+              position: absolute;
+              width: 100%;
+              margin-top: 360px;
+              display: flex;
+              justify-content: center;
+              bottom: 26.5px;
+            }
+            .navigation-auto div:not(:last-child) {
+              margin-right: 40px;
+            }
+
+            #radio1:checked ~ .navigation-auto .auto-btn1 {
+              background-color: $secondary-color;
+            }
+            #radio2:checked ~ .navigation-auto .auto-btn2 {
+              background-color: $secondary-color;
+            }
+            #radio3:checked ~ .navigation-auto .auto-btn3 {
+              background-color: $secondary-color;
+            }
+            #radio4:checked ~ .navigation-auto .auto-btn4 {
+              background-color: $secondary-color;
+            }
+          }
+          .mnual-navigation {
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+            .manual-btn {
+              border: 2px solid #fff;
+              padding: 5px;
+              border-radius: 10px;
+              cursor: pointer;
+              transition: 1s;
+            }
+
+            .manual-btn:not(:last-child) {
+              margin-right: 40px;
+            }
+            .manual-btn:hover {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+
+      .colSection-two {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .title-two {
+          h3 {
+            font-weight: 400;
+            font-size: 1.3rem;
+
+            strong {
+              color: $primary-color;
+            }
+          }
+        }
+        .listService {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            li {
+              i {
+                padding-right: 10px;
+                color: $secondary-color;
+                font-size: 20px;
+              }
+              strong {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+        .btnHistory {
+          color: red;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main{
+  .about {
+    .colsConatinerSectionOn {
+
+      .colSection-on{
+
+        .titleLocation{
+
+          p{
+            font-size: 16px;
+          }
+        }
+      }
+      .colSection-two {
+        .title-two {
+          h3 {
+            font-size: 1rem;
+
+            strong {
+              color: $primary-color;
+            }
+          }
+        }
+        .listService {
+          ul {
+            gap: 8px;
+            li {
+              font-size: 0.9rem;
+              strong {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+        .btnHistory {
+          color: red;
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+}
+
+@media (max-width: 576px){
+  main{
+    padding-top: 120px;
+    .about {
+      .colsConatinerSectionOn {
+        flex-direction: column;
+        .colSection-on{
+  
+          .titleLocation{
+  
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+        .colSection-two {
+          .title-two {
+            h3 {
+              font-size: 1rem;
+  
+              strong {
+                color: $primary-color;
+              }
+            }
+          }
+          .listService {
+            ul {
+              gap: 8px;
+              li {
+                font-size: 0.9rem;
+                strong {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+          .btnHistory {
+            color: red;
+            width: 250px;
+          }
+
+          .btnHistory{
+            margin-left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+}
