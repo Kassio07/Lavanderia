@@ -1,30 +1,29 @@
 main {
   padding-top: 200px;
-  overflow-x: hidden;   
+  overflow-x: hidden;
 
-  .about {
-    .titleSection {
-      width: 100%;
-      text-align: start;
-      padding-bottom: 50px;
-      h3 {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        position: relative;
-        color: $secondary-color;
-      }
-      h3::before {
-        content: " ";
-        position: absolute;
-        bottom: 0;
-        width: 40px;
-        height: 4px;
-        border-radius: 10px;
-        background-color: $primary-color;
-      }
+  .titleSection {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 50px;
+    h3 {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      position: relative;
+      color: $secondary-color;
     }
-
+    h3::before {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      width: 40px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: $primary-color;
+    }
+  }
+  .about {
     .colsConatinerSectionOn {
       display: flex;
       flex-direction: row;
@@ -195,72 +194,87 @@ main {
       }
     }
   }
-}
+  .services {
+    padding: 100px 0 40px 0;
 
-@media (max-width: 768px) {
-  main{
-  .about {
-    .colsConatinerSectionOn {
+    .titleSection{
+      padding-bottom: 120px;
+    }
 
-      .colSection-on{
+    .service--cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;  
+      width: 100%;
+      gap: 65px;
+      .card--item {
+        // flex: 1;
+        width: 300px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .card--img {
+          height: 130px;
+          display: flex;
 
-        .titleLocation{
-
-          p{
-            font-size: 16px;
+          img {
+            border-radius: 15px;
           }
         }
-      }
-      .colSection-two {
-        .title-two {
-          h3 {
+        .card--title {
+          h4 {
+            color: $primary-color;
+            text-transform: uppercase;
             font-size: 1rem;
+            text-align: start;
+          }
+        }
+        .card--text {
+          p {
+            font-size: 0.8rem;
+            font-weight: normal;
+            text-align: start;
+          }
+        }
 
-            strong {
-              color: $primary-color;
+        .card--button {
+          position: relative;
+          button {
+            background-color: transparent;
+            padding: 10px 15px;
+            border-radius: 7px;
+            border: 1px solid $primary-light;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 500;
+          }
+          button:hover {
+            border: 1px solid $secondary-color;
+          }
+          span {
+            i {
+              color: $secondary-color;
             }
           }
-        }
-        .listService {
-          ul {
-            gap: 8px;
-            li {
-              font-size: 0.9rem;
-              strong {
-                color: $primary-color;
-              }
-            }
-          }
-        }
-        .btnHistory {
-          color: red;
-          width: 250px;
         }
       }
     }
   }
 }
-}
 
-@media (max-width: 576px){
-  main{
-    padding-top: 120px;
+@media (max-width: 768px) {
+  main {
     .about {
       .colsConatinerSectionOn {
-        flex-direction: column;
-        .colSection-on{
-          
-          .titleLocation{
-  
-            p{
+        .colSection-on {
+          .titleLocation {
+            p {
               font-size: 16px;
-            }
-          }
-
-          .slider{
-            margin-right: 10px;
-            .slides{
-
             }
           }
         }
@@ -268,7 +282,7 @@ main {
           .title-two {
             h3 {
               font-size: 1rem;
-  
+
               strong {
                 color: $primary-color;
               }
@@ -285,7 +299,57 @@ main {
               }
             }
           }
-          .history{
+          .btnHistory {
+            color: red;
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding-top: 120px;
+    .about {
+      .colsConatinerSectionOn {
+        flex-direction: column;
+        .colSection-on {
+          .titleLocation {
+            p {
+              font-size: 16px;
+            }
+          }
+
+          .slider {
+            margin-right: 10px;
+            .slides {
+            }
+          }
+        }
+        .colSection-two {
+          .title-two {
+            h3 {
+              font-size: 1rem;
+
+              strong {
+                color: $primary-color;
+              }
+            }
+          }
+          .listService {
+            ul {
+              gap: 8px;
+              li {
+                font-size: 0.9rem;
+                strong {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+          .history {
             margin-right: 10px;
           }
           .btnHistory {
@@ -293,7 +357,7 @@ main {
             width: 250px;
           }
 
-          .btnHistory{
+          .btnHistory {
             margin-left: 50%;
             transform: translateX(-50%);
           }

@@ -340,19 +340,19 @@ main {
   padding-top: 200px;
   overflow-x: hidden;
 }
-main .about .titleSection {
+main .titleSection {
   width: 100%;
   text-align: start;
   padding-bottom: 50px;
 }
-main .about .titleSection h3 {
-  font-size: 1.8rem;
+main .titleSection h3 {
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 600;
   position: relative;
   color: #00ADEF;
 }
-main .about .titleSection h3::before {
+main .titleSection h3::before {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -504,6 +504,66 @@ main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
 main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   color: red;
   width: 250px;
+}
+main .services {
+  padding: 100px 0 40px 0;
+}
+main .services .titleSection {
+  padding-bottom: 120px;
+}
+main .services .service--cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 65px;
+}
+main .services .service--cards .card--item {
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .services .service--cards .card--item .card--img {
+  height: 130px;
+  display: flex;
+}
+main .services .service--cards .card--item .card--img img {
+  border-radius: 15px;
+}
+main .services .service--cards .card--item .card--title h4 {
+  color: #008374;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: start;
+}
+main .services .service--cards .card--item .card--text p {
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-align: start;
+}
+main .services .service--cards .card--item .card--button {
+  position: relative;
+}
+main .services .service--cards .card--item .card--button button {
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 1px solid #36CDBC;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+main .services .service--cards .card--item .card--button button:hover {
+  border: 1px solid #00ADEF;
+}
+main .services .service--cards .card--item .card--button span i {
+  color: #00ADEF;
 }
 
 @media (max-width: 768px) {
