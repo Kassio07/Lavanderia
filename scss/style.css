@@ -532,7 +532,7 @@ main .services .service--cards {
 }
 main .services .service--cards .card--item {
   width: 300px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   border-radius: 15px;
   padding: 15px;
   display: flex;
@@ -564,9 +564,12 @@ main .services .service--cards .card--item .card--text {
   height: 60px;
 }
 main .services .service--cards .card--item .card--text p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: normal;
   text-align: start;
+}
+main .services .service--cards .card--item .card--text p strong {
+  color: #7f8c8d;
 }
 main .services .service--cards .card--item .card--button {
   position: relative;
@@ -579,9 +582,12 @@ main .services .service--cards .card--item .card--button button {
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 500;
+  color: #008374;
+  transition: 0.5s;
 }
 main .services .service--cards .card--item .card--button button:hover {
   border: 1px solid #00ADEF;
+  color: #00ADEF;
 }
 main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;

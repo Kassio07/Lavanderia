@@ -223,7 +223,8 @@ main {
       .card--item {
         // flex: 1;
         width: 300px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         border-radius: 15px;
         padding: 15px;
         display: flex;
@@ -254,9 +255,13 @@ main {
           height: 60px;
 
           p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: normal;
             text-align: start;
+
+            strong{
+              color: $gray-dark;
+            }
           }
         }
 
@@ -270,9 +275,12 @@ main {
             text-transform: uppercase;
             font-size: 0.7rem;
             font-weight: 500;
+            color: $primary-color;
+            transition: 0.5s;
           }
           button:hover {
             border: 1px solid $secondary-color;
+            color: $secondary-color;
           }
           span {
             i {
