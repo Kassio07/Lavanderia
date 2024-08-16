@@ -656,6 +656,16 @@ main .services .service--cards .card--item .card--button span i {
     margin-left: 50%;
     transform: translateX(-50%);
   }
+  main .services .subtitle--service {
+    padding: 0 0 80px 0;
+    text-align: center;
+  }
+  main .services .subtitle--service h2 {
+    background-color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #008374;
+  }
 }
 body {
   font-family: "Poppins", sans-serif;

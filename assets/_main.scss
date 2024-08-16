@@ -390,5 +390,19 @@ main {
         }
       }
     }
+
+    .services{
+
+      .subtitle--service{
+        padding: 0 0 80px 0;
+        text-align: center;
+        h2{
+          background-color: #fff;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: $primary-color;
+        }
+      }
+    }
   }
 }
