@@ -1,7 +1,7 @@
 main {
   padding-top: 200px;
+  padding-right: 10px;
   overflow-x: hidden;
-
   .titleSection {
     width: 100%;
     text-align: start;
@@ -390,8 +390,14 @@ main {
         }
       }
     }
-
+    
     .services{
+      .service--cards{
+
+        .card--item{
+          width: 100%;
+        }
+      }
 
       .subtitle--service{
         padding: 0 0 80px 0;
