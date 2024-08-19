@@ -677,13 +677,23 @@ main .testemunhas .slider--container .manual-navigaton {
   justify-content: center;
 }
 main .testemunhas .slider--container .manual-navigaton .manual-btn {
-  border: 2px solid red;
+  border: 2px solid #008374;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 1s;
 }
 main .testemunhas .slider--container .manual-navigaton .manual-btn:not(:last-child) {
   margin-right: 40px;
+}
+main .testemunhas .slider--container .manual-navigaton .manual-btn:hover {
+  background-color: #008374;
+}
+main .testemunhas .slider--container #radio1:checked ~ .first {
+  margin-left: 0;
+}
+main .testemunhas .slider--container #radio2:checked ~ .first {
+  margin-left: -25%;
 }
 
 @media (max-width: 768px) {
