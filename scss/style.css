@@ -347,7 +347,7 @@ main .titleSection {
   padding-bottom: 50px;
 }
 main .titleSection h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
   position: relative;
@@ -507,7 +507,7 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   width: 250px;
 }
 main .services {
-  padding: 100px 0 40px 0;
+  padding: 100px 0 150px 0;
 }
 main .services .titleSection {
   padding-bottom: 80px;
@@ -592,6 +592,98 @@ main .services .service--cards .card--item .card--button button:hover {
 }
 main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;
+}
+main .testemunhas {
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+main .testemunhas .titleSection {
+  padding: 60px 0;
+}
+main .testemunhas .testemunhas--subtitle {
+  padding: 0 0 120px 0;
+  text-align: center;
+}
+main .testemunhas .testemunhas--subtitle h2 {
+  background-color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #008374;
+}
+main .testemunhas .slider--container {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+}
+main .testemunhas .slider--container .slides--cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 400%;
+  height: 400px;
+  margin: 10px;
+}
+main .testemunhas .slider--container .slides--cards input {
+  display: none;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 7.7%;
+  position: relative;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-img {
+  display: flex;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-img img {
+  width: 80px;
+  border-radius: 50%;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite h3 {
+  font-size: 16px;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite p {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite .card-star {
+  display: flex;
+  flex-direction: row;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite .card-star i {
+  color: #FFC107;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-text {
+  font-style: italic;
+  font-weight: 400;
+  text-indent: 30px;
+  margin-top: 15px;
+}
+main .testemunhas .slider--container .manual-navigaton {
+  position: absolute;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+main .testemunhas .slider--container .manual-navigaton .manual-btn {
+  border: 2px solid red;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main .testemunhas .slider--container .manual-navigaton .manual-btn:not(:last-child) {
+  margin-right: 40px;
 }
 
 @media (max-width: 768px) {
