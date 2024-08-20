@@ -282,8 +282,9 @@ main {
             transition: 0.5s;
           }
           button:hover {
-            border: 1px solid $secondary-color;
-            color: $secondary-color;
+            // border: 1px solid $secondary-color;
+            color: $white;
+            background-color: $primary-color;
           }
           span {
             i {
@@ -338,7 +339,7 @@ main {
 
         .slide--card-item{
           background-color: $white ;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           padding: 40px;
           display: flex;
           flex-direction: column;
@@ -398,11 +399,11 @@ main {
 
         }
       }
-      .manual-navigaton .manual-btn:not(:last-child){
+      .manual-btn:not(:last-child){
         margin-right: 40px;
       }
 
-      .manual-navigaton .manual-btn:hover{
+     .manual-btn:hover{
         background-color: $primary-color;
       }
       
@@ -410,9 +411,8 @@ main {
         margin-left: 0;
       }
       #radio2:checked ~ .first{
-        margin-left: -25%;
+        margin-left: -50%;
       }
-
       
     }
   }

@@ -587,8 +587,8 @@ main .services .service--cards .card--item .card--button button {
   transition: 0.5s;
 }
 main .services .service--cards .card--item .card--button button:hover {
-  border: 1px solid #00ADEF;
-  color: #00ADEF;
+  color: #fff;
+  background-color: #008374;
 }
 main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;
@@ -629,7 +629,7 @@ main .testemunhas .slider--container .slides--cards input {
 }
 main .testemunhas .slider--container .slides--cards .slide--card-item {
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -683,17 +683,17 @@ main .testemunhas .slider--container .manual-navigaton .manual-btn {
   cursor: pointer;
   transition: 1s;
 }
-main .testemunhas .slider--container .manual-navigaton .manual-btn:not(:last-child) {
+main .testemunhas .slider--container .manual-btn:not(:last-child) {
   margin-right: 40px;
 }
-main .testemunhas .slider--container .manual-navigaton .manual-btn:hover {
+main .testemunhas .slider--container .manual-btn:hover {
   background-color: #008374;
 }
 main .testemunhas .slider--container #radio1:checked ~ .first {
   margin-left: 0;
 }
 main .testemunhas .slider--container #radio2:checked ~ .first {
-  margin-left: -25%;
+  margin-left: -50%;
 }
 
 @media (max-width: 768px) {
