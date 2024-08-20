@@ -83,7 +83,6 @@ header .headerInfo .overflow .header .col1 .titleHeader h1 {
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
 }
 header .headerInfo .overflow .header .col1 .subtitleHeader {
   font-size: 1rem;
@@ -121,6 +120,7 @@ header .headerInfo .overflow .cardsHeaderContainer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 17px;
+  padding-right: 10px;
 }
 header .headerInfo .overflow .cardsHeaderContainer .card-item {
   flex: 1;
@@ -251,13 +251,14 @@ header .close {
   header .headerInfo .overflow .header {
     padding-top: 50px;
     flex-direction: column-reverse;
+    height: 100vh;
   }
   header .headerInfo .overflow .header .col1 {
     gap: 10px;
   }
-  header .headerInfo .overflow .header .col1 .titleHeader {
+  header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 40px;
   }
   header .headerInfo .overflow .header .col1 .subtitleHeader {
@@ -271,7 +272,7 @@ header .close {
     justify-content: center;
   }
   header .headerInfo .overflow .header .col2 .imgHeader img {
-    width: 100%;
+    width: 60%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
     top: 84vh;
@@ -283,13 +284,19 @@ header .close {
   header .headerInfo .overflow .cardsHeaderContainer .card-item {
     padding: 35px 5px;
   }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item div {
+    height: 50px;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item div img {
+    width: 80px;
+  }
   header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
   header .headerInfo .overflow .header {
-    height: 258vh;
+    height: 223vh;
     flex-direction: column-reverse;
   }
   header .headerInfo .overflow .header .col1 {
@@ -331,21 +338,22 @@ header .close {
 }
 main {
   padding-top: 200px;
+  padding-right: 10px;
   overflow-x: hidden;
 }
-main .about .titleSection {
+main .titleSection {
   width: 100%;
   text-align: start;
   padding-bottom: 50px;
 }
-main .about .titleSection h3 {
-  font-size: 1.8rem;
+main .titleSection h3 {
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 600;
   position: relative;
   color: #00ADEF;
 }
-main .about .titleSection h3::before {
+main .titleSection h3::before {
   content: " ";
   position: absolute;
   bottom: 0;
@@ -416,6 +424,7 @@ main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide {
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
   width: 100%;
+  height: 100%;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div {
   border: 2px solid #00ADEF;
@@ -497,6 +506,195 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   color: red;
   width: 250px;
 }
+main .services {
+  padding: 100px 0 150px 0;
+}
+main .services .titleSection {
+  padding-bottom: 80px;
+}
+main .services .subtitle--service {
+  padding: 0 0 120px 0;
+  text-align: center;
+}
+main .services .subtitle--service h2 {
+  background-color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #008374;
+}
+main .services .service--cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 19px;
+}
+main .services .service--cards .card--item {
+  width: 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .services .service--cards .card--item .card--img {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+}
+main .services .service--cards .card--item .card--img img {
+  border-radius: 15px;
+  width: 100%;
+  display: block;
+}
+main .services .service--cards .card--item .card--title {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+main .services .service--cards .card--item .card--title h4 {
+  color: #008374;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: start;
+}
+main .services .service--cards .card--item .card--text {
+  height: 60px;
+}
+main .services .service--cards .card--item .card--text p {
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: start;
+}
+main .services .service--cards .card--item .card--text p strong {
+  color: #7f8c8d;
+}
+main .services .service--cards .card--item .card--button {
+  position: relative;
+}
+main .services .service--cards .card--item .card--button button {
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 7px;
+  border: 1px solid #36CDBC;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #008374;
+  transition: 0.5s;
+}
+main .services .service--cards .card--item .card--button button:hover {
+  border: 1px solid #00ADEF;
+  color: #00ADEF;
+}
+main .services .service--cards .card--item .card--button span i {
+  color: #00ADEF;
+}
+main .testemunhas {
+  overflow: hidden;
+  padding-bottom: 200px;
+}
+main .testemunhas .titleSection {
+  padding: 60px 0;
+}
+main .testemunhas .testemunhas--subtitle {
+  padding: 0 0 120px 0;
+  text-align: center;
+}
+main .testemunhas .testemunhas--subtitle h2 {
+  background-color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #008374;
+}
+main .testemunhas .slider--container {
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  overflow: hidden;
+}
+main .testemunhas .slider--container .slides--cards {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 400%;
+  height: 400px;
+  margin: 10px;
+}
+main .testemunhas .slider--container .slides--cards input {
+  display: none;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 7.7%;
+  position: relative;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-img {
+  display: flex;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-img img {
+  width: 80px;
+  border-radius: 50%;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite h3 {
+  font-size: 16px;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite p {
+  font-size: 12px;
+  color: #7f8c8d;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite .card-star {
+  display: flex;
+  flex-direction: row;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite .card-star i {
+  color: #FFC107;
+}
+main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-text {
+  font-style: italic;
+  font-weight: 400;
+  text-indent: 30px;
+  margin-top: 15px;
+}
+main .testemunhas .slider--container .manual-navigaton {
+  position: absolute;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+main .testemunhas .slider--container .manual-navigaton .manual-btn {
+  border: 2px solid #008374;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+main .testemunhas .slider--container .manual-navigaton .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+main .testemunhas .slider--container .manual-navigaton .manual-btn:hover {
+  background-color: #008374;
+}
+main .testemunhas .slider--container #radio1:checked ~ .first {
+  margin-left: 0;
+}
+main .testemunhas .slider--container #radio2:checked ~ .first {
+  margin-left: -25%;
+}
 
 @media (max-width: 768px) {
   main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
@@ -532,6 +730,9 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
     font-size: 16px;
   }
+  main .about .colsConatinerSectionOn .colSection-on .slider {
+    margin-right: 10px;
+  }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
     font-size: 1rem;
   }
@@ -547,6 +748,9 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
     color: #008374;
   }
+  main .about .colsConatinerSectionOn .colSection-two .history {
+    margin-right: 10px;
+  }
   main .about .colsConatinerSectionOn .colSection-two .btnHistory {
     color: red;
     width: 250px;
@@ -554,6 +758,19 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   main .about .colsConatinerSectionOn .colSection-two .btnHistory {
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+  main .services .service--cards .card--item {
+    width: 100%;
+  }
+  main .services .subtitle--service {
+    padding: 0 0 80px 0;
+    text-align: center;
+  }
+  main .services .subtitle--service h2 {
+    background-color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #008374;
   }
 }
 body {
@@ -564,7 +781,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);

@@ -1,30 +1,29 @@
 main {
   padding-top: 200px;
-  overflow-x: hidden;   
-
-  .about {
-    .titleSection {
-      width: 100%;
-      text-align: start;
-      padding-bottom: 50px;
-      h3 {
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        position: relative;
-        color: $secondary-color;
-      }
-      h3::before {
-        content: " ";
-        position: absolute;
-        bottom: 0;
-        width: 40px;
-        height: 4px;
-        border-radius: 10px;
-        background-color: $primary-color;
-      }
+  padding-right: 10px;
+  overflow-x: hidden;
+  .titleSection {
+    width: 100%;
+    text-align: start;
+    padding-bottom: 50px;
+    h3 {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      position: relative;
+      color: $secondary-color;
     }
-
+    h3::before {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      width: 40px;
+      height: 4px;
+      border-radius: 10px;
+      background-color: $primary-color;
+    }
+  }
+  .about {
     .colsConatinerSectionOn {
       display: flex;
       flex-direction: row;
@@ -64,7 +63,6 @@ main {
 
         .slider {
           max-width: 600px;
-          // height: 400px;
           overflow: hidden;
           border-radius: 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -96,6 +94,7 @@ main {
               transition: 1s;
               img {
                 width: 100%;
+                height: 100%;
               }
             }
 
@@ -194,64 +193,238 @@ main {
       }
     }
   }
-}
 
-@media (max-width: 768px) {
-  main{
-  .about {
-    .colsConatinerSectionOn {
+  // Serviço -------------------------------
 
-      .colSection-on{
 
-        .titleLocation{
+  .services {
+    padding: 100px 0 150px 0;
 
-          p{
-            font-size: 16px;
-          }
-        }
+    .titleSection{
+      padding-bottom: 80px;
+    }
+
+    .subtitle--service{
+      padding: 0 0 120px 0;
+      text-align: center;
+      h2{
+        background-color: #fff;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $primary-color;
       }
-      .colSection-two {
-        .title-two {
-          h3 {
-            font-size: 1rem;
+    }
 
-            strong {
-              color: $primary-color;
+    .service--cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;  
+      width: 100%;
+      gap: 19px;
+      .card--item {
+        // flex: 1;
+        width: 300px;
+        // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .card--img {
+          height: 180px;
+          display: flex;
+          justify-content: center;
+          img {
+            border-radius: 15px;
+            width: 100%;
+            display: block;
+          }
+        }
+        .card--title {
+          display: flex;
+          align-items: center;
+          height: 40px;
+          h4 {
+            color: $primary-color;
+            text-transform: uppercase;
+            font-size: 1rem;
+            text-align: start;
+          }
+        }
+        .card--text {
+          height: 60px;
+
+          p {
+            font-size: 0.9rem;
+            font-weight: normal;
+            text-align: start;
+
+            strong{
+              color: $gray-dark;
             }
           }
         }
-        .listService {
-          ul {
-            gap: 8px;
-            li {
-              font-size: 0.9rem;
-              strong {
-                color: $primary-color;
-              }
+
+        .card--button {
+          position: relative;
+          button {
+            background-color: transparent;
+            padding: 10px 15px;
+            border-radius: 7px;
+            border: 1px solid $primary-light;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: $primary-color;
+            transition: 0.5s;
+          }
+          button:hover {
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+          }
+          span {
+            i {
+              color: $secondary-color;
             }
           }
-        }
-        .btnHistory {
-          color: red;
-          width: 250px;
         }
       }
     }
   }
-}
+
+
+  // Testemunhas --------------------------
+
+
+  .testemunhas{
+    overflow: hidden;
+    padding-bottom: 200px;
+    .titleSection{
+      padding: 60px 0;
+    }
+
+    .testemunhas--subtitle{
+      padding: 0 0 120px 0;
+      text-align: center;
+      h2{
+        background-color: #fff;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $primary-color;
+      }
+    }
+    .slider--container{
+        width: 100%;
+        margin: 0 auto;
+        height: 500px;
+        overflow: hidden;
+
+      .slides--cards{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        width: 400%;
+        height: 400px;
+        margin: 10px;
+
+      
+
+        input{
+          display: none;
+        }
+
+        .slide--card-item{
+          background-color: $white ;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 7.7%;
+          position: relative;
+          .slide-card-img{
+            display: flex;
+            img{
+              width: 80px;
+              border-radius: 50%;
+            }
+          }
+
+          .slide-card-tite{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h3{
+              font-size: 16px;
+            }
+            p{
+              font-size: 12px;
+              color: $gray-dark;
+            }
+
+            .card-star{
+              display: flex;
+              flex-direction: row;
+              i{
+                color: #FFC107;
+              }
+            }
+          }
+
+          .slide-card-text{
+            font-style: italic;
+            font-weight: 400;
+            text-indent: 30px;
+            margin-top: 15px;
+          }
+        }
+
+      }
+      .manual-navigaton{
+        position: absolute;
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        .manual-btn{
+          border: 2px solid $primary-color;
+          padding: 5px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 1s;
+
+        }
+      }
+      .manual-navigaton .manual-btn:not(:last-child){
+        margin-right: 40px;
+      }
+
+      .manual-navigaton .manual-btn:hover{
+        background-color: $primary-color;
+      }
+      
+      #radio1:checked ~ .first{
+        margin-left: 0;
+      }
+      #radio2:checked ~ .first{
+        margin-left: -25%;
+      }
+
+      
+    }
+  }
 }
 
-@media (max-width: 576px){
-  main{
-    padding-top: 120px;
+@media (max-width: 768px) {
+  main {
     .about {
       .colsConatinerSectionOn {
-        flex-direction: column;
-        .colSection-on{
-  
-          .titleLocation{
-  
-            p{
+        .colSection-on {
+          .titleLocation {
+            p {
               font-size: 16px;
             }
           }
@@ -260,7 +433,7 @@ main {
           .title-two {
             h3 {
               font-size: 1rem;
-  
+
               strong {
                 color: $primary-color;
               }
@@ -281,11 +454,84 @@ main {
             color: red;
             width: 250px;
           }
+        }
+      }
+    }
+  }
+}
 
-          .btnHistory{
+@media (max-width: 576px) {
+  main {
+    padding-top: 120px;
+    .about {
+      .colsConatinerSectionOn {
+        flex-direction: column;
+        .colSection-on {
+          .titleLocation {
+            p {
+              font-size: 16px;
+            }
+          }
+
+          .slider {
+            margin-right: 10px;
+            .slides {
+            }
+          }
+        }
+        .colSection-two {
+          .title-two {
+            h3 {
+              font-size: 1rem;
+
+              strong {
+                color: $primary-color;
+              }
+            }
+          }
+          .listService {
+            ul {
+              gap: 8px;
+              li {
+                font-size: 0.9rem;
+                strong {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+          .history {
+            margin-right: 10px;
+          }
+          .btnHistory {
+            color: red;
+            width: 250px;
+          }
+
+          .btnHistory {
             margin-left: 50%;
             transform: translateX(-50%);
           }
+        }
+      }
+    }
+    
+    .services{
+      .service--cards{
+
+        .card--item{
+          width: 100%;
+        }
+      }
+
+      .subtitle--service{
+        padding: 0 0 80px 0;
+        text-align: center;
+        h2{
+          background-color: #fff;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: $primary-color;
         }
       }
     }
