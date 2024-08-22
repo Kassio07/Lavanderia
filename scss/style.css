@@ -611,63 +611,70 @@ main .testemunhas .testemunhas--subtitle h2 {
   color: #008374;
 }
 main .testemunhas .slider--container {
-  width: 100%;
   margin: 0 auto;
-  height: 500px;
+  width: 1400px;
+  height: 400px;
   overflow: hidden;
 }
 main .testemunhas .slider--container .slides--cards {
-  display: flex;
-  flex-direction: row;
   gap: 40px;
-  width: 400%;
+  width: 800%;
   height: 400px;
+  display: flex;
   margin: 10px;
+  background-color: red;
 }
 main .testemunhas .slider--container .slides--cards input {
   display: none;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item {
+main .testemunhas .slider--container .slides--cards .slide-card-item {
+  width: 435px;
+  position: relative;
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 40px;
-  display: flex;
-  flex-direction: column;
   gap: 10px;
-  width: 7.7%;
-  position: relative;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-img {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-img {
   display: flex;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-img img {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-img img {
   width: 80px;
   border-radius: 50%;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite h3 {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite h3 {
   font-size: 16px;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite p {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite p {
   font-size: 12px;
   color: #7f8c8d;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite .card-star {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite .card-star {
   display: flex;
   flex-direction: row;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-tite .card-star i {
-  color: #FFC107;
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite .card-star i {
+  color: #ffc107;
 }
-main .testemunhas .slider--container .slides--cards .slide--card-item .slide-card-text {
+main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-text {
   font-style: italic;
   font-weight: 400;
   text-indent: 30px;
   margin-top: 15px;
+}
+main .testemunhas .slider--container #radio1:checked ~ .first {
+  margin-left: 0;
+}
+main .testemunhas .slider--container #radio2:checked ~ .first {
+  margin-left: -435px;
+}
+main .testemunhas .slider--container #radio2:checked ~ .first {
+  margin-left: -16%;
 }
 main .testemunhas .slider--container .manual-navigaton {
   position: absolute;
@@ -688,12 +695,6 @@ main .testemunhas .slider--container .manual-btn:not(:last-child) {
 }
 main .testemunhas .slider--container .manual-btn:hover {
   background-color: #008374;
-}
-main .testemunhas .slider--container #radio1:checked ~ .first {
-  margin-left: 0;
-}
-main .testemunhas .slider--container #radio2:checked ~ .first {
-  margin-left: -50%;
 }
 
 @media (max-width: 768px) {
