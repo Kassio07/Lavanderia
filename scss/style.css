@@ -617,19 +617,16 @@ main .testemunhas .slider--container {
   overflow: hidden;
 }
 main .testemunhas .slider--container .slides--cards {
-  gap: 40px;
-  width: 800%;
+  width: 400%;
   height: 400px;
   display: flex;
-  margin: 10px;
-  background-color: red;
+  gap: 20px;
 }
 main .testemunhas .slider--container .slides--cards input {
   display: none;
 }
 main .testemunhas .slider--container .slides--cards .slide-card-item {
-  width: 435px;
-  position: relative;
+  width: 8%;
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 40px;
@@ -667,15 +664,6 @@ main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card
   text-indent: 30px;
   margin-top: 15px;
 }
-main .testemunhas .slider--container #radio1:checked ~ .first {
-  margin-left: 0;
-}
-main .testemunhas .slider--container #radio2:checked ~ .first {
-  margin-left: -435px;
-}
-main .testemunhas .slider--container #radio2:checked ~ .first {
-  margin-left: -16%;
-}
 main .testemunhas .slider--container .manual-navigaton {
   position: absolute;
   width: 100%;
@@ -695,6 +683,21 @@ main .testemunhas .slider--container .manual-btn:not(:last-child) {
 }
 main .testemunhas .slider--container .manual-btn:hover {
   background-color: #008374;
+}
+main .testemunhas .slider--container #radio1:checked ~ .first {
+  margin-left: 0;
+}
+main .testemunhas .slider--container #radio2:checked ~ .first {
+  margin-left: -25%;
+}
+main .testemunhas .slider--container #radio3:checked ~ .first {
+  margin-left: -50%;
+}
+main .testemunhas .slider--container #radio4:checked ~ .first {
+  margin-left: -75%;
+}
+main .testemunhas .slider--container #radio5:checked ~ .first {
+  margin-left: -100%;
 }
 
 @media (max-width: 768px) {
@@ -804,6 +807,8 @@ button {
 
 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h2 {

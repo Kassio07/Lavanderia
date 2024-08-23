@@ -320,28 +320,27 @@ main {
       width: 1400px;
       height: 400px;
       overflow: hidden;
-
+      
       .slides--cards {
-        gap: 40px;
-        width: 800%;
+        width: 400%;
         height: 400px;
         display: flex;
-        margin: 10px;
-        background-color: red;
-      
+        gap: 20px;
 
-          input {
-            display: none;
-          }
-
+        // margin: 10px;
+        
+        
+        input {
+          display: none;
+        }
+        
         .slide-card-item {
-          width: 435px;
-          position: relative;
+          // position: relative;
+          width: 8%;
           background-color: $white;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           padding: 40px;
           gap: 10px;
-
           .slide-card-img {
             display: flex;
             img {
@@ -377,20 +376,27 @@ main {
             text-indent: 30px;
             margin-top: 15px;
           }
-          
         }
-       
+      //   .navigation-auto{
+      //     position: absolute;
+      //     width: 100%;
+      //     margin-top: 439px;
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //   }
+      //  .navigation-auto div{
+      //   padding: 5px;
+      //   border: 2px solid red;
+      //   border-radius: 10px;
+      //  }
+
+      //  .navigation-auto div:not(:last-child){
+      //   margin-right: 40px;
+      //  }
         
       }
-      #radio1:checked ~ .first {
-        margin-left: 0;
-      }
-      #radio2:checked ~ .first {
-        margin-left: -435px;
-      }
-      #radio2:checked ~ .first {
-        margin-left: -16%;
-      }
+      
    
       .manual-navigaton {
         position: absolute;
@@ -405,6 +411,7 @@ main {
           cursor: pointer;
           transition: 1s;
         }
+        
       
       }
       .manual-btn:not(:last-child) {
@@ -415,15 +422,26 @@ main {
       .manual-btn:hover {
         background-color: $primary-color;
       }
+
+      #radio1:checked ~ .first{
+        margin-left: 0;
+      }
+      #radio2:checked ~ .first{
+        margin-left: -25%;
+      }
+      #radio3:checked ~ .first{
+        margin-left: -50%;
+      }
+      #radio4:checked ~ .first{
+        margin-left: -75%;
+      }
+      #radio5:checked ~ .first{
+        margin-left: -100%;
+      }
     
-     
     }
-  
-  }
-
-
- 
-  
+    
+  } 
 }
 
 @media (max-width: 768px) {
