@@ -23,6 +23,20 @@ main {
       background-color: $primary-color;
     }
   }
+
+  .subtitle--section {
+    padding: 0 0 120px 0;
+    text-align: center;
+    h2 {
+      background-color: #fff;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: $primary-color;
+    }
+  }
+
+
+
   .about {
     .colsConatinerSectionOn {
       display: flex;
@@ -194,6 +208,8 @@ main {
     }
   }
 
+  
+
   // Serviço -------------------------------
 
   .services {
@@ -201,17 +217,6 @@ main {
 
     .titleSection {
       padding-bottom: 80px;
-    }
-
-    .subtitle--service {
-      padding: 0 0 120px 0;
-      text-align: center;
-      h2 {
-        background-color: #fff;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        color: $primary-color;
-      }
     }
 
     .service--cards {
@@ -299,69 +304,53 @@ main {
   // Testemunhas --------------------------
 
   .testemunhas {
-    overflow: hidden;
     padding-bottom: 200px;
-    .titleSection {
-      padding: 60px 0;
-    }
-
-    .testemunhas--subtitle {
-      padding: 0 0 120px 0;
-      text-align: center;
-      h2 {
-        background-color: #fff;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        color: $primary-color;
-      }
-    }
-    .slider--container {
-      margin: 0 auto;
+    .slider2 {
       width: 1400px;
       height: 400px;
       overflow: hidden;
       
-      .slides--cards {
+      .slides2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        
         width: 400%;
         height: 400px;
-        display: flex;
-        gap: 20px;
-
-        // margin: 10px;
-        
-        
         input {
           display: none;
         }
         
-        .slide-card-item {
-          // position: relative;
-          width: 8%;
-          background-color: $white;
-          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-          padding: 40px;
-          gap: 10px;
-          .slide-card-img {
-            display: flex;
+        .slide2 {
+          position: relative;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          width:7.8%;
+          height: 350px;
+          padding: 30px;
+          // gap: 15px;
+          margin: 10px;
+          transition: 0.8s;
+
+          .slide-img {
             img {
               width: 80px;
               border-radius: 50%;
             }
           }
-
-          .slide-card-tite {
+          .slide-textDestaque {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            h3 {
-              font-size: 16px;
+            gap: 5px;
+            margin-bottom: 20px;
+            h4 {
+              font-size: 1rem;
             }
-            p {
-              font-size: 12px;
+            span {
               color: $gray-dark;
+              font-size: 0.8rem;
             }
-
-            .card-star {
+            .star {
               display: flex;
               flex-direction: row;
               i {
@@ -369,80 +358,93 @@ main {
               }
             }
           }
-
-          .slide-card-text {
-            font-style: italic;
-            font-weight: 400;
+          .slide-text {
             text-indent: 30px;
-            margin-top: 15px;
+            text-align: justify;
+            font-size: 0.8rem;
+            font-style: italic;
+          }
+         
+        }
+
+        .auto-navigation{
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 492px;
+          div{
+            padding: 5px;
+            border: 2px solid $primary-color;
+            border-radius: 10px;
           }
         }
-      //   .navigation-auto{
-      //     position: absolute;
-      //     width: 100%;
-      //     margin-top: 439px;
-      //     display: flex;
-      //     justify-content: center;
-      //     align-items: center;
-      //   }
-      //  .navigation-auto div{
-      //   padding: 5px;
-      //   border: 2px solid red;
-      //   border-radius: 10px;
-      //  }
+        .auto-navigation div:not(:last-child){
+          margin-right: 40px;
+        }
 
-      //  .navigation-auto div:not(:last-child){
-      //   margin-right: 40px;
-      //  }
-        
-      }
-      
-   
-      .manual-navigaton {
-        position: absolute;
-        width: 100%;
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        .manual-btn {
-          border: 2px solid $primary-color;
-          padding: 5px;
-          border-radius: 10px;
-          cursor: pointer;
-          transition: 1s;
+        #radio-1:checked ~ .auto-navigation .btn-auto1{
+          background-color: $primary-color;
+        }
+        #radio-2:checked ~ .auto-navigation .btn-auto2{
+          background-color: $primary-color;
+        }
+        #radio-3:checked ~ .auto-navigation .btn-auto3{
+          background-color: $primary-color;
+        }
+        #radio-4:checked ~ .auto-navigation .btn-auto4{
+          background-color: $primary-color;
+        }
+        #radio-5:checked ~ .auto-navigation .btn-auto5{
+          background-color: $primary-color;
         }
         
-      
       }
-      .manual-btn:not(:last-child) {
-        // acessando somente o último elemento.
-        margin-right: 40px;
+      #radio-1:checked ~ .first2{
+        margin-left: 0%;
       }
-
-      .manual-btn:hover {
-        background-color: $primary-color;
+      #radio-2:checked ~ .first2{
+        margin-left: -8.3%;
       }
-
-      #radio1:checked ~ .first{
-        margin-left: 0;
+      #radio-3:checked ~ .first2{
+        margin-left: -16.6%;
       }
-      #radio2:checked ~ .first{
+      #radio-4:checked ~ .first2{
         margin-left: -25%;
       }
-      #radio3:checked ~ .first{
-        margin-left: -50%;
+      #radio-5:checked ~ .first2{
+        margin-left: -42%;
       }
-      #radio4:checked ~ .first{
-        margin-left: -75%;
+
+
+      .manual-navigation2{
+        width: 100%;
+        position: absolute;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        .manual-btn2{
+          border: 2px solid green;
+          padding: 5px;
+          border-radius: 10px;
+          transition: 1s;
+          cursor: pointer;
+        }
+        .manual-btn2:not(:last-child){
+          margin-right: 40px;
+        }
+        .manual-btn2:hover{
+          background-color: $primary-color;
+        }
       }
-      #radio5:checked ~ .first{
-        margin-left: -100%;
-      }
-    
+     
     }
     
-  } 
+  }
 }
+
+
 
 @media (max-width: 768px) {
   main {
@@ -549,7 +551,7 @@ main {
         }
       }
 
-      .subtitle--service {
+      .subtitle--section {
         padding: 0 0 80px 0;
         text-align: center;
         h2 {

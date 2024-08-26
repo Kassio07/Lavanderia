@@ -362,6 +362,16 @@ main .titleSection h3::before {
   border-radius: 10px;
   background-color: #008374;
 }
+main .subtitle--section {
+  padding: 0 0 120px 0;
+  text-align: center;
+}
+main .subtitle--section h2 {
+  background-color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #008374;
+}
 main .about .colsConatinerSectionOn {
   display: flex;
   flex-direction: row;
@@ -512,16 +522,6 @@ main .services {
 main .services .titleSection {
   padding-bottom: 80px;
 }
-main .services .subtitle--service {
-  padding: 0 0 120px 0;
-  text-align: center;
-}
-main .services .subtitle--service h2 {
-  background-color: #fff;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: #008374;
-}
 main .services .service--cards {
   display: flex;
   flex-direction: row;
@@ -594,110 +594,127 @@ main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;
 }
 main .testemunhas {
-  overflow: hidden;
   padding-bottom: 200px;
 }
-main .testemunhas .titleSection {
-  padding: 60px 0;
-}
-main .testemunhas .testemunhas--subtitle {
-  padding: 0 0 120px 0;
-  text-align: center;
-}
-main .testemunhas .testemunhas--subtitle h2 {
-  background-color: #fff;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: #008374;
-}
-main .testemunhas .slider--container {
-  margin: 0 auto;
+main .testemunhas .slider2 {
   width: 1400px;
   height: 400px;
   overflow: hidden;
 }
-main .testemunhas .slider--container .slides--cards {
+main .testemunhas .slider2 .slides2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
   width: 400%;
   height: 400px;
-  display: flex;
-  gap: 20px;
 }
-main .testemunhas .slider--container .slides--cards input {
+main .testemunhas .slider2 .slides2 input {
   display: none;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item {
-  width: 8%;
-  background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 40px;
-  gap: 10px;
+main .testemunhas .slider2 .slides2 .slide2 {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 7.8%;
+  height: 350px;
+  padding: 30px;
+  margin: 10px;
+  transition: 0.8s;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-img {
-  display: flex;
-}
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-img img {
+main .testemunhas .slider2 .slides2 .slide2 .slide-img img {
   width: 80px;
   border-radius: 50%;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite {
+main .testemunhas .slider2 .slides2 .slide2 .slide-textDestaque {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
+  margin-bottom: 20px;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite h3 {
-  font-size: 16px;
+main .testemunhas .slider2 .slides2 .slide2 .slide-textDestaque h4 {
+  font-size: 1rem;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite p {
-  font-size: 12px;
+main .testemunhas .slider2 .slides2 .slide2 .slide-textDestaque span {
   color: #7f8c8d;
+  font-size: 0.8rem;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite .card-star {
+main .testemunhas .slider2 .slides2 .slide2 .slide-textDestaque .star {
   display: flex;
   flex-direction: row;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-tite .card-star i {
+main .testemunhas .slider2 .slides2 .slide2 .slide-textDestaque .star i {
   color: #ffc107;
 }
-main .testemunhas .slider--container .slides--cards .slide-card-item .slide-card-text {
-  font-style: italic;
-  font-weight: 400;
+main .testemunhas .slider2 .slides2 .slide2 .slide-text {
   text-indent: 30px;
-  margin-top: 15px;
+  text-align: justify;
+  font-size: 0.8rem;
+  font-style: italic;
 }
-main .testemunhas .slider--container .manual-navigaton {
+main .testemunhas .slider2 .slides2 .auto-navigation {
   position: absolute;
   width: 100%;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 492px;
+}
+main .testemunhas .slider2 .slides2 .auto-navigation div {
+  padding: 5px;
+  border: 2px solid #008374;
+  border-radius: 10px;
+}
+main .testemunhas .slider2 .slides2 .auto-navigation div:not(:last-child) {
+  margin-right: 40px;
+}
+main .testemunhas .slider2 .slides2 #radio-1:checked ~ .auto-navigation .btn-auto1 {
+  background-color: #008374;
+}
+main .testemunhas .slider2 .slides2 #radio-2:checked ~ .auto-navigation .btn-auto2 {
+  background-color: #008374;
+}
+main .testemunhas .slider2 .slides2 #radio-3:checked ~ .auto-navigation .btn-auto3 {
+  background-color: #008374;
+}
+main .testemunhas .slider2 .slides2 #radio-4:checked ~ .auto-navigation .btn-auto4 {
+  background-color: #008374;
+}
+main .testemunhas .slider2 .slides2 #radio-5:checked ~ .auto-navigation .btn-auto5 {
+  background-color: #008374;
+}
+main .testemunhas .slider2 #radio-1:checked ~ .first2 {
+  margin-left: 0%;
+}
+main .testemunhas .slider2 #radio-2:checked ~ .first2 {
+  margin-left: -8.3%;
+}
+main .testemunhas .slider2 #radio-3:checked ~ .first2 {
+  margin-left: -16.6%;
+}
+main .testemunhas .slider2 #radio-4:checked ~ .first2 {
+  margin-left: -25%;
+}
+main .testemunhas .slider2 #radio-5:checked ~ .first2 {
+  margin-left: -42%;
+}
+main .testemunhas .slider2 .manual-navigation2 {
+  width: 100%;
+  position: absolute;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
-main .testemunhas .slider--container .manual-navigaton .manual-btn {
-  border: 2px solid #008374;
+main .testemunhas .slider2 .manual-navigation2 .manual-btn2 {
+  border: 2px solid green;
   padding: 5px;
   border-radius: 10px;
-  cursor: pointer;
   transition: 1s;
+  cursor: pointer;
 }
-main .testemunhas .slider--container .manual-btn:not(:last-child) {
+main .testemunhas .slider2 .manual-navigation2 .manual-btn2:not(:last-child) {
   margin-right: 40px;
 }
-main .testemunhas .slider--container .manual-btn:hover {
+main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
   background-color: #008374;
-}
-main .testemunhas .slider--container #radio1:checked ~ .first {
-  margin-left: 0;
-}
-main .testemunhas .slider--container #radio2:checked ~ .first {
-  margin-left: -25%;
-}
-main .testemunhas .slider--container #radio3:checked ~ .first {
-  margin-left: -50%;
-}
-main .testemunhas .slider--container #radio4:checked ~ .first {
-  margin-left: -75%;
-}
-main .testemunhas .slider--container #radio5:checked ~ .first {
-  margin-left: -100%;
 }
 
 @media (max-width: 768px) {
@@ -766,11 +783,11 @@ main .testemunhas .slider--container #radio5:checked ~ .first {
   main .services .service--cards .card--item {
     width: 100%;
   }
-  main .services .subtitle--service {
+  main .services .subtitle--section {
     padding: 0 0 80px 0;
     text-align: center;
   }
-  main .services .subtitle--service h2 {
+  main .services .subtitle--section h2 {
     background-color: #fff;
     font-size: 1rem;
     text-transform: uppercase;

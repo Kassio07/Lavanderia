@@ -84,4 +84,23 @@ cs('nav a').forEach(link =>{
 });
 
 
+// slide testimonials
+
+let cont = 1;
+document.getElementById('radio-1').checked = true;
+
+setInterval(function(){
+nextSlideTestimonials();
+},2000)
+
+function nextSlideTestimonials(){
+  cont ++;
+
+  if(cont > 5){
+    cont = 1 
+  }
+
+    document.getElementById('radio-'+ cont).checked = true;
+}
+
 
