@@ -91,7 +91,7 @@ document.getElementById('radio-1').checked = true;
 
 setInterval(function(){
 nextSlideTestimonials();
-},2000)
+},4000)
 
 function nextSlideTestimonials(){
   cont ++;

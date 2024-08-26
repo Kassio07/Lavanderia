@@ -619,7 +619,7 @@ main .testemunhas .slider2 .slides2 .slide2 {
   height: 350px;
   padding: 30px;
   margin: 10px;
-  transition: 0.8s;
+  transition: 2s;
 }
 main .testemunhas .slider2 .slides2 .slide2 .slide-img img {
   width: 80px;
