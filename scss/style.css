@@ -549,6 +549,8 @@ main .services .service--cards .card--item .card--img img {
   border-radius: 15px;
   width: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .services .service--cards .card--item .card--title {
   display: flex;
@@ -597,7 +599,7 @@ main .testemunhas {
   padding-bottom: 200px;
 }
 main .testemunhas .slider2 {
-  width: 1400px;
+  width: 100%;
   height: 400px;
   overflow: hidden;
 }
@@ -740,6 +742,48 @@ main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
     color: red;
     width: 250px;
   }
+  main .testemunhas .slider2 {
+    max-width: 800px;
+  }
+  main .testemunhas .slider2 .slides2 {
+    margin-left: 7px;
+    gap: 0;
+  }
+  main .testemunhas .slider2 .slides2 .slide2 {
+    min-width: 23%;
+  }
+  main .testemunhas .slider2 .slides2 .auto-navigation {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 492px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main .testemunhas .slider2 .slides2 .auto-navigation div {
+    padding: 5px;
+    border: 2px solid #008374;
+    border-radius: 10px;
+  }
+  main .testemunhas .slider2 .slides2 .noneSlide {
+    display: none;
+  }
+  main .testemunhas .slider2 #radio-1:checked ~ .first2 {
+    margin-left: 0%;
+  }
+  main .testemunhas .slider2 #radio-2:checked ~ .first2 {
+    margin-left: -24%;
+  }
+  main .testemunhas .slider2 #radio-3:checked ~ .first2 {
+    margin-left: -48%;
+  }
+  main .testemunhas .slider2 #radio-4:checked ~ .first2 {
+    margin-left: -73%;
+  }
+  main .testemunhas .slider2 #radio-5:checked ~ .first2 {
+    margin-left: -97%;
+  }
 }
 @media (max-width: 576px) {
   main {
@@ -792,6 +836,20 @@ main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
     font-size: 1rem;
     text-transform: uppercase;
     color: #008374;
+  }
+}
+@media (max-width: 992px) {
+  main .testemunhas .slider2 .slides2 .slide2 {
+    height: 320px;
+  }
+  main .testemunhas .slider2 .slides2 .slide2 .slide-textDestaque h4 {
+    font-size: 0.8rem;
+  }
+  main .testemunhas .slider2 .slides2 .slide2 .slide-img img {
+    width: 65px;
+  }
+  main .testemunhas .slider2 .slides2 .slide2 .slide-text {
+    font-size: 0.7rem;
   }
 }
 body {

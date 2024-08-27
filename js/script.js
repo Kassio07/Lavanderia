@@ -29,11 +29,11 @@ hamburguer.addEventListener("click", () => {
 let frame = c(".video video");
 function openClose() {
   let videoContainer = c(".video");
-  let iframeUrl = 'img/higienização-de-estofados.mp4';
+  let iframeUrl = "img/higienização-de-estofados.mp4";
   frame.src = iframeUrl;
-  frame.removeAttribute('autoplay');
+  frame.removeAttribute("autoplay");
   setTimeout(() => {
-    videoContainer.classList.toggle("close")
+    videoContainer.classList.toggle("close");
   }, 500);
 }
 
@@ -42,65 +42,63 @@ c(".btnVideo").addEventListener("click", () => {
   openClose();
 });
 
-
 c("#closeVideo").addEventListener("click", () => {
   c(".headerFixed").style.display = "block";
   openClose();
 });
 
-
-
 // Slider About
 
 let count = 1;
 document.getElementById("radio1").checked = true;
-setInterval(function(){
-    nextImage();
-},4000)
+setInterval(function () {
+  nextImage();
+}, 4000);
 
 function nextImage() {
   count++;
-  if(count > 4) {
+  if (count > 4) {
     count = 1;
   }
-  document.getElementById("radio"+ count).checked = true;
+  document.getElementById("radio" + count).checked = true;
 }
 
 // Event scrolly
 
-cs('nav a').forEach(link =>{
-  link.addEventListener('click', function(e){
+cs("nav a").forEach((link) => {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const targetId = this.getAttribute('href');
+    const targetId = this.getAttribute("href");
     const targetSection = c(targetId);
 
     const offsetPosition = targetSection.offsetTop - 500;
 
-   targetSection.scrollIntoView({
-    behavior: 'smooth'
-   })
+    targetSection.scrollIntoView({
+      behavior: "smooth",
+    });
   });
 });
-
 
 // slide testimonials
 
 let cont = 1;
-document.getElementById('radio-1').checked = true;
+document.getElementById("radio-1").checked = true;
 
-setInterval(function(){
-nextSlideTestimonials();
-},4000)
+setInterval(function () {
+  nextSlideTestimonials();
+}, 4000);
 
-function nextSlideTestimonials(){
-  cont ++;
+function nextSlideTestimonials() {
+  cont++;
 
-  if(cont > 5){
-    cont = 1 
+  if (cont > 5) {
+    cont = 1;
   }
 
-    document.getElementById('radio-'+ cont).checked = true;
+  document.getElementById("radio-" + cont).checked = true;
 }
+
+// End slide testimonials
 
 
