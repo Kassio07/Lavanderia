@@ -533,7 +533,7 @@ main .services .service--cards {
 }
 main .services .service--cards .card--item {
   width: 300px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   border-radius: 15px;
   padding: 15px;
   display: flex;
@@ -783,6 +783,9 @@ main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
   }
   main .testemunhas .slider2 #radio-5:checked ~ .first2 {
     margin-left: -97%;
+  }
+  main .subtitle--section {
+    padding-bottom: 70px;
   }
 }
 @media (max-width: 576px) {
