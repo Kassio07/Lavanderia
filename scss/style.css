@@ -398,12 +398,13 @@ main .about .colsConatinerSectionOn .colSection-on .textLocation p {
   font-size: 1rem;
   font-weight: 300;
   text-indent: 30px;
+  text-align: justify;
 }
 main .about .colsConatinerSectionOn .colSection-on .textLocation p strong {
   font-weight: normal;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider {
-  max-width: 600px;
+  max-width: 100%;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -653,6 +654,14 @@ main .testemunhas .slider2 .slides2 .slide2 .slide-text {
   font-size: 0.8rem;
   font-style: italic;
 }
+main .testemunhas .slider2 .slides2 .slide2 .imgGoogle {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+main .testemunhas .slider2 .slides2 .slide2 .imgGoogle img {
+  width: 40px;
+}
 main .testemunhas .slider2 .slides2 .auto-navigation {
   position: absolute;
   width: 100%;
@@ -718,8 +727,63 @@ main .testemunhas .slider2 .manual-navigation2 .manual-btn2:not(:last-child) {
 main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
   background-color: #008374;
 }
+main .contact {
+  padding-bottom: 200px;
+}
+main .contact .contact-conatiner {
+  display: flex;
+  gap: 10px;
+}
+main .contact .contact-conatiner .col1-contact {
+  flex: 1.5;
+}
+main .contact .contact-conatiner .col2-contact {
+  flex: 1;
+  padding: 25px;
+  background-color: #008374;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .contact .contact-conatiner .col2-contact div {
+  background-color: rgba(10, 102, 91, 0.6196078431);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .contact .contact-conatiner .col2-contact div div {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+}
+main .contact .contact-conatiner .col2-contact div div i {
+  font-size: 2.5em;
+  color: #008374;
+}
+main .contact .contact-conatiner .col2-contact div .contact-text {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+main .contact .contact-conatiner .col2-contact div .contact-text p:first-child {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
 
 @media (max-width: 768px) {
+  main .about .colsConatinerSectionOn {
+    gap: 40px;
+  }
   main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
     font-size: 16px;
   }
