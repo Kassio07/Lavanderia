@@ -666,7 +666,7 @@ main .testemunhas .slider2 .slides2 .auto-navigation div {
   border-radius: 10px;
 }
 main .testemunhas .slider2 .slides2 .auto-navigation div:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 10px;
 }
 main .testemunhas .slider2 .slides2 #radio-1:checked ~ .auto-navigation .btn-auto1 {
   background-color: #008374;
@@ -713,7 +713,7 @@ main .testemunhas .slider2 .manual-navigation2 .manual-btn2 {
   cursor: pointer;
 }
 main .testemunhas .slider2 .manual-navigation2 .manual-btn2:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 10px;
 }
 main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
   background-color: #008374;

@@ -379,7 +379,7 @@ main {
           }
         }
         .auto-navigation div:not(:last-child){
-          margin-right: 40px;
+          margin-right: 10px;
         }
 
         #radio-1:checked ~ .auto-navigation .btn-auto1{
@@ -431,7 +431,7 @@ main {
           cursor: pointer;
         }
         .manual-btn2:not(:last-child){
-          margin-right: 40px;
+          margin-right: 10px;
         }
         .manual-btn2:hover{
           background-color: $primary-color;
