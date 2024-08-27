@@ -851,6 +851,12 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
   main .subtitle--section {
     padding-bottom: 70px;
   }
+  .contact .contact-conatiner {
+    flex-direction: column;
+  }
+  .contact .contact-conatiner .col1-contact iframe {
+    height: 400px;
+  }
 }
 @media (max-width: 576px) {
   main {
@@ -903,6 +909,19 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
     font-size: 1rem;
     text-transform: uppercase;
     color: #008374;
+  }
+  main .contact .contact-conatiner .col2-contact div div i {
+    font-size: 2.2em;
+  }
+  main .contact .contact-conatiner .col2-contact div .contact-text p:first-child {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 992px) {

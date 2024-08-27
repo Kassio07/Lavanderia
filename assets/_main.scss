@@ -611,6 +611,19 @@ main {
         padding-bottom:70px ;
       }
   }
+
+  .contact{
+    .contact-conatiner{
+      flex-direction: column;
+
+      .col1-contact{
+
+        iframe{
+          height: 400px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -685,6 +698,31 @@ main {
           font-size: 1rem;
           text-transform: uppercase;
           color: $primary-color;
+        }
+      }
+    }
+    .contact{
+      .contact-conatiner{
+        .col2-contact{
+          div{
+            div{
+              i{
+                font-size: 2.2em;
+  
+              }
+            }
+            .contact-text p:first-child{
+              color: $white;
+              font-weight: 600;
+              font-size: 1rem;
+            }
+            .contact-text p:last-child{
+              color: $white;
+              font-weight: 400;
+              font-size: 0.7rem;
+            }
+          }
+         
         }
       }
     }
