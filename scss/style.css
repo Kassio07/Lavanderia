@@ -920,7 +920,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     transform: translateX(-50%);
   }
   main .services {
-    padding: 0;
+    padding: 0 0 150px 0;
   }
   main .services .service--cards .card--item {
     width: 100%;
