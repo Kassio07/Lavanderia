@@ -202,8 +202,13 @@ main {
           }
         }
         .btnHistory {
-          color: red;
           width: 250px;
+
+          a{
+            color: red;
+            width: 250px;
+            letter-spacing: 2px;
+          }
         }
       }
     }
@@ -276,16 +281,22 @@ main {
           position: relative;
           button {
             background-color: transparent;
-            padding: 10px 15px;
-            border-radius: 7px;
-            border: 1px solid $primary-light;
-            text-transform: uppercase;
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: $primary-color;
-            transition: 0.5s;
+            // padding: 10px 15px;
+            a{
+              color: $primary-color;
+              display: block;
+              width: 95px;
+              height: 35px;
+              border-radius: 7px;
+              border: 1px solid $primary-light;
+              transition: 0.5s;
+              text-transform: uppercase;
+              font-weight: 500;
+              font-size: 0.7rem;
+              line-height: 35px;
+            }
           }
-          button:hover {
+          a:hover {
             // border: 1px solid $secondary-color;
             color: $white;
             background-color: $primary-color;
@@ -455,7 +466,7 @@ main {
 
   // contato
   .contact{
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     .contact-conatiner{
       display: flex;
       gap: 10px;
@@ -507,6 +518,16 @@ main {
             color: $white;
             font-weight: 400;
             font-size: 0.8rem;
+
+            a{
+              color: $white;
+              border: none;
+              i{
+                font-size: 1.4rem;
+                margin-left: 5px;
+                color: $primary-light;
+              }
+            }
           }
         }
        
@@ -683,6 +704,7 @@ main {
     }
 
     .services {
+      padding: 0;
       .service--cards {
         .card--item {
           width: 100%;

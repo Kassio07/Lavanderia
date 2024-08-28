@@ -191,19 +191,22 @@ header {
 
 .contact {
   button {
-    // background-color: $primary-light;
     background-color: transparent;
-    border: 2px solid $primary-light;
-    width: 150px;
-    height: 45px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 100;
-    color: $white;
-    letter-spacing: 2px;
-    transition: ease-in 0.5s;
+    a{
+      color: $white;
+      display: block;      
+      width: 150px;
+      height: 45px;
+      border-radius: 10px;
+      border: 2px solid $primary-light;
+      font-size: 1rem;
+      font-weight: 100;
+      letter-spacing: 4px;
+      transition: ease-in 0.5s;
+      line-height: 40px;
+    }
   }
-  button:hover {
+  a:hover {
     border: 2px solid $secondary-color;
     box-sizing: border-box;
   }

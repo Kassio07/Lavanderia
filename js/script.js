@@ -65,7 +65,7 @@ function nextImage() {
 
 // Event scrolly
 
-cs("nav a").forEach((link) => {
+cs("a").forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault();
 
