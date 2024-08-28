@@ -971,8 +971,22 @@ footer .footer-container {
   flex-direction: row;
   padding: 50px 0;
 }
-footer .footer-container div {
-  flex: 1;
+footer .footer-container div ul {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  gap: 17px;
+}
+footer .footer-container div ul li a {
+  color: #1eae9d;
+  font-weight: 500;
+  transition: 0.5s;
+}
+footer .footer-container div ul li a:hover {
+  color: #36CDBC;
+}
+footer .footer-container .foo-col1 {
+  flex: 1.5;
 }
 footer .footer-container .foo-col1 .foo-text {
   padding: 15px 0;
@@ -987,12 +1001,10 @@ footer .footer-container .foo-col1 .foo-text p {
 footer .footer-container .foo-col1 .foo-text p strong {
   color: #36CDBC;
 }
-footer .footer-container .foo-col1 .foo-social {
-  padding: 30px 0;
-}
 footer .footer-container .foo-col1 .foo-social ul {
   display: flex;
   gap: 20px;
+  flex-direction: row;
 }
 footer .footer-container .foo-col1 .foo-social ul li a {
   display: block;
@@ -1016,19 +1028,8 @@ footer .footer-container .foo-col1 .foo-social ul li a:hover {
 footer .footer-container .foo-col1 .foo-social ul li a:hover i {
   color: #36CDBC;
 }
-footer .footer-container .foo-col2 .foo-linksnavigation ul {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0;
-  gap: 17px;
-}
-footer .footer-container .foo-col2 .foo-linksnavigation ul li a {
-  color: #1eae9d;
-  font-weight: 500;
-  transition: 0.5s;
-}
-footer .footer-container .foo-col2 .foo-linksnavigation ul li a:hover {
-  color: #36CDBC;
+footer .footer-container .foo-col2, footer .footer-container .foo-col3, footer .footer-container .foo-col4 {
+  flex: 0.5;
 }
 footer .footer-container .foo-title {
   color: #fff;
@@ -1037,7 +1038,48 @@ footer .footer-container .foo-title {
 footer .footer-container .foo-title .pqn {
   font-size: 1rem;
 }
+footer .footer-container .foo-cols {
+  flex: 1;
+  display: flex;
+}
+footer .direitos {
+  text-align: center;
+  padding: 30px 0px;
+  border-top: 1px solid #fff;
+  border-top-color: aqua;
+}
+footer .direitos p {
+  color: #36CDBC;
+  font: 0.8rem;
+}
+footer .direitos p strong {
+  color: #fff;
+  font-weight: 400;
+}
 
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .footer-container .foo-col1 .foo-social {
+    padding-bottom: 80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  footer .footer-container .foo-cols {
+    flex-direction: column;
+  }
+  footer .footer-container .foo-cols div ul li a {
+    font-size: 1rem;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;

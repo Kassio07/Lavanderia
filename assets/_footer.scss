@@ -8,12 +8,29 @@ footer{
         padding: 50px 0;
 
         div{
-            flex: 1;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                padding: 30px 0;
+                gap: 17px;
+                li{
+
+                    a{
+                        color: #1eae9d ;
+                        font-weight: 500;
+                        transition: 0.5s;
+                    }
+                    a:hover{
+                        color: $primary-light;
+                    }
+                }
+            }
         }
 
         .foo-col1{
 
-
+            flex: 1.5;
             .foo-text{
                 padding: 15px 0;
                 p{
@@ -30,12 +47,12 @@ footer{
             }
 
             .foo-social{
-                padding: 30px 0;
+                // padding: 30px 0;
 
                 ul{
                     display: flex;
                     gap: 20px;
-
+                    flex-direction: row;
                     li{
                         
                         a{
@@ -70,28 +87,8 @@ footer{
             }
         }
 
-        .foo-col2{
-
-            .foo-linksnavigation{
-                ul{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 30px 0;
-                    gap: 17px;
-
-                    li{
-
-                        a{
-                            color: #1eae9d ;
-                            font-weight: 500;
-                            transition: 0.5s;
-                        }
-                        a:hover{
-                            color: $primary-light;
-                        }
-                    }
-                }
-            }
+        .foo-col2,.foo-col3,.foo-col4{
+            flex: 0.5;
         }
 
         .foo-title{
@@ -101,7 +98,75 @@ footer{
                 font-size: 1rem;
             }
         }
+
+        .foo-cols{
+            flex: 1;
+            display: flex;
+        }
+    }
+
+    .direitos{
+        text-align: center;
+        padding: 30px 0px;
+        border-top: 1px solid $white;
+        border-top-color: aqua;
+
+        p{
+            color: $primary-light;
+            font: 0.8rem;
+            strong{
+                color: $white;
+                font-weight: 400;
+            }
+        }
     }
     
     
+}
+
+@media (max-width: 768px){
+    footer{
+
+
+        .footer-container{
+
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 576px){
+    footer{
+
+
+        .footer-container{
+
+            flex-direction: column;
+            justify-content: center;
+
+            .foo-col1{
+                .foo-social{
+                    padding-bottom: 80px;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .foo-cols{
+                flex-direction: column;
+                div{
+
+                    ul{
+
+                        li{
+
+                            a{
+
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
