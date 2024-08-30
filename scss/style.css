@@ -1028,8 +1028,14 @@ footer .footer-container .foo-col1 .foo-social ul li a:hover {
 footer .footer-container .foo-col1 .foo-social ul li a:hover i {
   color: #36CDBC;
 }
-footer .footer-container .foo-col2, footer .footer-container .foo-col3, footer .footer-container .foo-col4 {
-  flex: 0.5;
+footer .footer-container .foo-col2 {
+  flex: 0.3;
+}
+footer .footer-container .foo-col3 {
+  flex: 0.4;
+}
+footer .footer-container .foo-col4 {
+  flex: 0.8;
 }
 footer .footer-container .foo-title {
   color: #fff;

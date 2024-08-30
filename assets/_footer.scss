@@ -87,8 +87,15 @@ footer{
             }
         }
 
-        .foo-col2,.foo-col3,.foo-col4{
-            flex: 0.5;
+        .foo-col2{
+            flex: 0.3;
+        }
+        .foo-col3{
+            flex: 0.4;
+        }
+
+        .foo-col4{
+            flex: 0.8;
         }
 
         .foo-title{
