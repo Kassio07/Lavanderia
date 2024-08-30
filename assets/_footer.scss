@@ -30,7 +30,7 @@ footer{
 
         .foo-col1{
 
-            flex: 1.5;
+            flex: 1;
             .foo-text{
                 padding: 15px 0;
                 p{
@@ -88,14 +88,13 @@ footer{
         }
 
         .foo-col2{
-            flex: 0.3;
-        }
+            flex: 0.3;        }
         .foo-col3{
             flex: 0.4;
         }
 
         .foo-col4{
-            flex: 0.8;
+            flex: 0.6;
         }
 
         .foo-title{
@@ -140,6 +139,17 @@ footer{
             flex-direction: column;
             justify-content: center;
         }
+
+        .foo-col1{
+
+            .foo-social{
+
+                ul{
+                    justify-content: center;
+                    padding-bottom: 80px;
+                }
+            }
+        }
     }
 }
 @media (max-width: 576px){
@@ -153,15 +163,19 @@ footer{
 
             .foo-col1{
                 .foo-social{
-                    padding-bottom: 80px;
+                    padding-bottom: 40px;
                     margin-left: 50%;
                     transform: translateX(-50%);
                 }
             }
             .foo-cols{
                 flex-direction: column;
+                
                 div{
-
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
                     ul{
 
                         li{
