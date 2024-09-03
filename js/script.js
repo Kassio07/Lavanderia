@@ -34,7 +34,7 @@ function openClose() {
   frame.removeAttribute("autoplay");
   setTimeout(() => {
     videoContainer.classList.toggle("close");
-  }, 500);
+  }, 300);
 }
 
 c(".btnVideo").addEventListener("click", () => {
@@ -72,13 +72,12 @@ cs(".scrolllTo li a").forEach((link) => {
     const targetId = this.getAttribute("href");
     const targetSection = c(targetId);
 
-    const offsetPosition = targetSection.offsetTop - 500;
-
     targetSection.scrollIntoView({
       behavior: "smooth",
     });
   });
 });
+
 
 // slide testimonials
 
