@@ -1,4 +1,5 @@
 "use strict";
+AOS.init();
 
 let c = (a) => document.querySelector(a);
 let cs = (a) => document.querySelectorAll(a);
@@ -99,5 +100,7 @@ function nextSlideTestimonials() {
 }
 
 // End slide testimonials
+
+
 
 
