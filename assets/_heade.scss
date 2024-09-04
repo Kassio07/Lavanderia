@@ -37,8 +37,9 @@ header {
 
         li {
           a {
-            color: $white;
+            color: $color-dark;
             font-size: 1.2rem;
+            font-weight: 600;
             transition: all 1s;
             position: relative;
             transition: 1s;
@@ -50,7 +51,7 @@ header {
             bottom: 0;
             left: 0;
             border-radius: 10px;
-            background-color: $secondary-color;
+            background-color: $color-dark;
             position: absolute;
           }
         }
@@ -84,16 +85,16 @@ header {
             display: flex;
             justify-content: flex-start;
             h1{
-            color: $white;
+            color:$color-dark;
             font-size: 2.2rem;
             font-weight: bold;
             text-transform: uppercase;
             }
           }
           .subtitleHeader {
+            color:$gray-dark;
             font-size: 1rem;
             font-weight: 400;
-            color: #ffffffb4;
             margin-bottom: 36px;
           }
 
@@ -101,7 +102,7 @@ header {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 50px;
+            gap: 25px;
             .videoheader {
               .modal-video {
                 span {
@@ -138,7 +139,7 @@ header {
 
         .card-item {
           flex: 1;
-          background-color: $primary-light;
+          background-color: $color-dark;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -193,12 +194,12 @@ header {
   button {
     background-color: transparent;
     a{
-      color: $white;
+      color: $color-dark;
       display: block;      
       width: 150px;
       height: 45px;
       border-radius: 10px;
-      border: 2px solid $primary-light;
+      border: 2px solid $color-dark;
       font-size: 1rem;
       font-weight: 100;
       letter-spacing: 4px;
@@ -209,6 +210,7 @@ header {
   a:hover {
     border: 2px solid $secondary-color;
     box-sizing: border-box;
+    color: $secondary-color;
   }
 }
 

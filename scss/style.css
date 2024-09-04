@@ -7,7 +7,7 @@
 header .headerFixed {
   position: fixed;
   width: 100%;
-  background-color: #008374;
+  background-color: white;
   z-index: 98;
 }
 header .btnHamburguer {
@@ -36,8 +36,9 @@ header .ajustHeader .menuNav ul {
   gap: 35px;
 }
 header .ajustHeader .menuNav ul li a {
-  color: #fff;
+  color: #004DA6;
   font-size: 1.2rem;
+  font-weight: 600;
   transition: all 1s;
   position: relative;
   transition: 1s;
@@ -49,7 +50,7 @@ header .ajustHeader .menuNav ul li a:hover::after {
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  background-color: #00ADEF;
+  background-color: #004DA6;
   position: absolute;
 }
 header .ajustHeader .copy {
@@ -57,7 +58,7 @@ header .ajustHeader .copy {
 }
 header .headerInfo {
   padding-top: 70px;
-  background-color: #008374;
+  background-color: white;
 }
 header .headerInfo .overflow .header {
   display: flex;
@@ -79,22 +80,22 @@ header .headerInfo .overflow .header .col1 .titleHeader {
   justify-content: flex-start;
 }
 header .headerInfo .overflow .header .col1 .titleHeader h1 {
-  color: #fff;
+  color: #004DA6;
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 header .headerInfo .overflow .header .col1 .subtitleHeader {
+  color: #7f8c8d;
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7058823529);
   margin-bottom: 36px;
 }
 header .headerInfo .overflow .header .col1 .contactHeader {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-video span {
   display: flex;
@@ -124,7 +125,7 @@ header .headerInfo .overflow .cardsHeaderContainer {
 }
 header .headerInfo .overflow .cardsHeaderContainer .card-item {
   flex: 1;
-  background-color: #36CDBC;
+  background-color: #004DA6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,10 +144,10 @@ header .headerInfo .overflow .cardsHeaderContainer .card-item div img {
   width: 150px;
 }
 header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
-  color: #008374;
+  color: white;
 }
 header .video {
-  background-color: #008374;
+  background-color: white;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -174,12 +175,12 @@ header .close {
   background-color: transparent;
 }
 .contact button a {
-  color: #fff;
+  color: #004DA6;
   display: block;
   width: 150px;
   height: 45px;
   border-radius: 10px;
-  border: 2px solid #36CDBC;
+  border: 2px solid #004DA6;
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 4px;
@@ -189,6 +190,7 @@ header .close {
 .contact a:hover {
   border: 2px solid #00ADEF;
   box-sizing: border-box;
+  color: #00ADEF;
 }
 
 @media (max-width: 768px) {
@@ -261,7 +263,7 @@ header .close {
     gap: 10px;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: #fff;
+    color: red;
     font-size: 1.6rem;
     margin-top: 40px;
   }
@@ -307,7 +309,7 @@ header .close {
     gap: 20px;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: #fff;
+    color: red;
     font-size: 1.9rem;
     margin-top: 40px;
   }
@@ -364,7 +366,7 @@ main .titleSection h3::before {
   width: 40px;
   height: 4px;
   border-radius: 10px;
-  background-color: #008374;
+  background-color: white;
 }
 main .subtitle--section {
   padding: 0 0 120px 0;
@@ -374,7 +376,7 @@ main .subtitle--section h2 {
   background-color: #fff;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #008374;
+  color: white;
 }
 main .about .colsConatinerSectionOn {
   display: flex;
@@ -393,7 +395,7 @@ main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p strong {
   font-weight: 600;
-  color: #008374;
+  color: white;
 }
 main .about .colsConatinerSectionOn .colSection-on .textLocation {
   width: 100%;
@@ -502,7 +504,7 @@ main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
   font-size: 1.3rem;
 }
 main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
-  color: #008374;
+  color: white;
 }
 main .about .colsConatinerSectionOn .colSection-two .listService ul {
   display: flex;
@@ -515,7 +517,7 @@ main .about .colsConatinerSectionOn .colSection-two .listService ul li i {
   font-size: 20px;
 }
 main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
-  color: #008374;
+  color: white;
 }
 main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   width: 250px;
@@ -567,7 +569,7 @@ main .services .service--cards .card--item .card--title {
   height: 40px;
 }
 main .services .service--cards .card--item .card--title h4 {
-  color: #008374;
+  color: white;
   text-transform: uppercase;
   font-size: 1rem;
   text-align: start;
@@ -590,7 +592,7 @@ main .services .service--cards .card--item .card--button button {
   background-color: transparent;
 }
 main .services .service--cards .card--item .card--button button a {
-  color: #008374;
+  color: white;
   display: block;
   width: 95px;
   height: 35px;
@@ -603,8 +605,8 @@ main .services .service--cards .card--item .card--button button a {
   line-height: 35px;
 }
 main .services .service--cards .card--item .card--button a:hover {
-  color: #fff;
-  background-color: #008374;
+  color: red;
+  background-color: white;
 }
 main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;
@@ -684,26 +686,26 @@ main .testemunhas .slider2 .slides2 .auto-navigation {
 }
 main .testemunhas .slider2 .slides2 .auto-navigation div {
   padding: 5px;
-  border: 2px solid #008374;
+  border: 2px solid white;
   border-radius: 10px;
 }
 main .testemunhas .slider2 .slides2 .auto-navigation div:not(:last-child) {
   margin-right: 10px;
 }
 main .testemunhas .slider2 .slides2 #radio-1:checked ~ .auto-navigation .btn-auto1 {
-  background-color: #008374;
+  background-color: white;
 }
 main .testemunhas .slider2 .slides2 #radio-2:checked ~ .auto-navigation .btn-auto2 {
-  background-color: #008374;
+  background-color: white;
 }
 main .testemunhas .slider2 .slides2 #radio-3:checked ~ .auto-navigation .btn-auto3 {
-  background-color: #008374;
+  background-color: white;
 }
 main .testemunhas .slider2 .slides2 #radio-4:checked ~ .auto-navigation .btn-auto4 {
-  background-color: #008374;
+  background-color: white;
 }
 main .testemunhas .slider2 .slides2 #radio-5:checked ~ .auto-navigation .btn-auto5 {
-  background-color: #008374;
+  background-color: white;
 }
 main .testemunhas .slider2 #radio-1:checked ~ .first2 {
   margin-left: 0%;
@@ -738,7 +740,7 @@ main .testemunhas .slider2 .manual-navigation2 .manual-btn2:not(:last-child) {
   margin-right: 10px;
 }
 main .testemunhas .slider2 .manual-navigation2 .manual-btn2:hover {
-  background-color: #008374;
+  background-color: white;
 }
 main .contact {
   padding-bottom: 100px;
@@ -753,7 +755,7 @@ main .contact .contact-conatiner .col1-contact {
 main .contact .contact-conatiner .col2-contact {
   flex: 1;
   padding: 25px;
-  background-color: #008374;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -773,7 +775,7 @@ main .contact .contact-conatiner .col2-contact div div {
 }
 main .contact .contact-conatiner .col2-contact div div i {
   font-size: 2.5em;
-  color: #008374;
+  color: white;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text {
   flex: 2;
@@ -783,17 +785,17 @@ main .contact .contact-conatiner .col2-contact div .contact-text {
   align-items: start;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:first-child {
-  color: #fff;
+  color: red;
   font-weight: 600;
   font-size: 1.4rem;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
-  color: #fff;
+  color: red;
   font-weight: 400;
   font-size: 0.8rem;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a {
-  color: #fff;
+  color: red;
   border: none;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a i {
@@ -813,7 +815,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 1rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
-    color: #008374;
+    color: white;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul {
     gap: 8px;
@@ -822,7 +824,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 0.9rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
-    color: #008374;
+    color: white;
   }
   main .about .colsConatinerSectionOn .colSection-two .btnHistory {
     color: red;
@@ -849,7 +851,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   }
   main .testemunhas .slider2 .slides2 .auto-navigation div {
     padding: 5px;
-    border: 2px solid #008374;
+    border: 2px solid white;
     border-radius: 10px;
   }
   main .testemunhas .slider2 .slides2 .noneSlide {
@@ -897,7 +899,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 1rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
-    color: #008374;
+    color: white;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul {
     gap: 8px;
@@ -906,7 +908,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 0.9rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
-    color: #008374;
+    color: white;
   }
   main .about .colsConatinerSectionOn .colSection-two .history {
     margin-right: 10px;
@@ -933,18 +935,18 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     background-color: #fff;
     font-size: 1.4rem;
     text-transform: uppercase;
-    color: #008374;
+    color: white;
   }
   main .contact .contact-conatiner .col2-contact div div i {
     font-size: 2.2em;
   }
   main .contact .contact-conatiner .col2-contact div .contact-text p:first-child {
-    color: #fff;
+    color: red;
     font-weight: 600;
     font-size: 1rem;
   }
   main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
-    color: #fff;
+    color: red;
     font-weight: 400;
     font-size: 0.7rem;
   }
@@ -964,7 +966,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   }
 }
 footer {
-  background-color: #008374;
+  background-color: white;
 }
 footer .footer-container {
   display: flex;
@@ -994,7 +996,7 @@ footer .footer-container .foo-col1 .foo-text {
 footer .footer-container .foo-col1 .foo-text p {
   text-align: justify;
   font-size: 0.9rem;
-  color: #fff;
+  color: red;
   font-weight: 200;
   padding: 0 60px 0 0;
 }
@@ -1038,7 +1040,7 @@ footer .footer-container .foo-col4 {
   flex: 0.6;
 }
 footer .footer-container .foo-title {
-  color: #fff;
+  color: red;
   font-size: 1.8rem;
 }
 footer .footer-container .foo-title .pqn {
@@ -1051,7 +1053,7 @@ footer .footer-container .foo-cols {
 footer .direitos {
   text-align: center;
   padding: 30px 0px;
-  border-top: 1px solid #fff;
+  border-top: 1px solid red;
   border-top-color: aqua;
 }
 footer .direitos p {
@@ -1059,7 +1061,7 @@ footer .direitos p {
   font: 0.8rem;
 }
 footer .direitos p strong {
-  color: #fff;
+  color: red;
   font-weight: 400;
 }
 footer .btnZap {
@@ -1092,7 +1094,7 @@ footer .btnZap::before {
   padding: 10px;
   border-radius: 15px;
   font-size: 0.7rem;
-  color: #fff;
+  color: red;
   font-weight: normal;
   letter-spacing: 2px;
   display: none;
