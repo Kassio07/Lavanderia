@@ -1,5 +1,5 @@
 footer{
-    background-color: $primary-color;
+    background-color: #000F21;
 
 
     .footer-container{
@@ -17,7 +17,7 @@ footer{
                 li{
 
                     a{
-                        color: #1eae9d ;
+                        color: $color-dark;
                         font-weight: 500;
                         transition: 0.5s;
                     }

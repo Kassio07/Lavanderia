@@ -357,7 +357,7 @@ main .titleSection h3 {
   text-transform: uppercase;
   font-weight: 600;
   position: relative;
-  color: #00ADEF;
+  color: #004DA6;
 }
 main .titleSection h3::before {
   content: " ";
@@ -366,7 +366,7 @@ main .titleSection h3::before {
   width: 40px;
   height: 4px;
   border-radius: 10px;
-  background-color: white;
+  background-color: #004DA6;
 }
 main .subtitle--section {
   padding: 0 0 120px 0;
@@ -376,7 +376,11 @@ main .subtitle--section h2 {
   background-color: #fff;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: white;
+  color: #004DA6;
+  font-weight: 500;
+}
+main .subtitle--section h2 strong {
+  font-weight: 500;
 }
 main .about .colsConatinerSectionOn {
   display: flex;
@@ -391,11 +395,16 @@ main .about .colsConatinerSectionOn .colSection-on {
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p strong {
   font-weight: 600;
-  color: white;
+  color: #000;
+  font-weight: normal;
+}
+main .about .colsConatinerSectionOn .colSection-on .titleLocation p .destaque {
+  color: #004DA6;
+  font-weight: 600;
 }
 main .about .colsConatinerSectionOn .colSection-on .textLocation {
   width: 100%;
@@ -501,10 +510,11 @@ main .about .colsConatinerSectionOn .colSection-two {
 }
 main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
-  color: white;
+  color: #000;
+  font-weight: normal;
 }
 main .about .colsConatinerSectionOn .colSection-two .listService ul {
   display: flex;
@@ -513,11 +523,12 @@ main .about .colsConatinerSectionOn .colSection-two .listService ul {
 }
 main .about .colsConatinerSectionOn .colSection-two .listService ul li i {
   padding-right: 10px;
-  color: #00ADEF;
+  color: #004DA6;
   font-size: 20px;
 }
 main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
-  color: white;
+  color: #000;
+  font-weight: normal;
 }
 main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   width: 250px;
@@ -569,7 +580,7 @@ main .services .service--cards .card--item .card--title {
   height: 40px;
 }
 main .services .service--cards .card--item .card--title h4 {
-  color: white;
+  color: #004DA6;
   text-transform: uppercase;
   font-size: 1rem;
   text-align: start;
@@ -592,12 +603,12 @@ main .services .service--cards .card--item .card--button button {
   background-color: transparent;
 }
 main .services .service--cards .card--item .card--button button a {
-  color: white;
+  color: #004DA6;
   display: block;
   width: 95px;
   height: 35px;
   border-radius: 7px;
-  border: 1px solid #36CDBC;
+  border: 1px solid #004DA6;
   transition: 0.5s;
   text-transform: uppercase;
   font-weight: 500;
@@ -605,8 +616,8 @@ main .services .service--cards .card--item .card--button button a {
   line-height: 35px;
 }
 main .services .service--cards .card--item .card--button a:hover {
-  color: red;
-  background-color: white;
+  color: white;
+  background-color: #004DA6;
 }
 main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;
@@ -686,26 +697,26 @@ main .testemunhas .slider2 .slides2 .auto-navigation {
 }
 main .testemunhas .slider2 .slides2 .auto-navigation div {
   padding: 5px;
-  border: 2px solid white;
+  border: 2px solid #004DA6;
   border-radius: 10px;
 }
 main .testemunhas .slider2 .slides2 .auto-navigation div:not(:last-child) {
   margin-right: 10px;
 }
 main .testemunhas .slider2 .slides2 #radio-1:checked ~ .auto-navigation .btn-auto1 {
-  background-color: white;
+  background-color: #004DA6;
 }
 main .testemunhas .slider2 .slides2 #radio-2:checked ~ .auto-navigation .btn-auto2 {
-  background-color: white;
+  background-color: #004DA6;
 }
 main .testemunhas .slider2 .slides2 #radio-3:checked ~ .auto-navigation .btn-auto3 {
-  background-color: white;
+  background-color: #004DA6;
 }
 main .testemunhas .slider2 .slides2 #radio-4:checked ~ .auto-navigation .btn-auto4 {
-  background-color: white;
+  background-color: #004DA6;
 }
 main .testemunhas .slider2 .slides2 #radio-5:checked ~ .auto-navigation .btn-auto5 {
-  background-color: white;
+  background-color: #004DA6;
 }
 main .testemunhas .slider2 #radio-1:checked ~ .first2 {
   margin-left: 0%;
@@ -730,7 +741,7 @@ main .testemunhas .slider2 .manual-navigation2 {
   justify-content: center;
 }
 main .testemunhas .slider2 .manual-navigation2 .manual-btn2 {
-  border: 2px solid green;
+  border: 2px solid #004DA6;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -755,13 +766,13 @@ main .contact .contact-conatiner .col1-contact {
 main .contact .contact-conatiner .col2-contact {
   flex: 1;
   padding: 25px;
-  background-color: white;
+  background-color: #002E64;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 main .contact .contact-conatiner .col2-contact div {
-  background-color: rgba(10, 102, 91, 0.6196078431);
+  background-color: #001F42;
   width: 100%;
   height: 80px;
   display: flex;
@@ -785,17 +796,17 @@ main .contact .contact-conatiner .col2-contact div .contact-text {
   align-items: start;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:first-child {
-  color: red;
+  color: #004DA6;
   font-weight: 600;
   font-size: 1.4rem;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
-  color: red;
+  color: white;
   font-weight: 400;
   font-size: 0.8rem;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a {
-  color: red;
+  color: white;
   border: none;
 }
 main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a i {
@@ -966,7 +977,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   }
 }
 footer {
-  background-color: white;
+  background-color: #000F21;
 }
 footer .footer-container {
   display: flex;
@@ -980,7 +991,7 @@ footer .footer-container div ul {
   gap: 17px;
 }
 footer .footer-container div ul li a {
-  color: #1eae9d;
+  color: #004DA6;
   font-weight: 500;
   transition: 0.5s;
 }
