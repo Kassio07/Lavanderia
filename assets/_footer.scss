@@ -17,8 +17,8 @@ footer{
                 li{
 
                     a{
-                        color: $color-dark;
-                        font-weight: 500;
+                        color: $primary-color;
+                        font-weight: 300;
                         transition: 0.5s;
                     }
                     a:hover{
@@ -36,12 +36,13 @@ footer{
                 p{
                     text-align: justify;
                     font-size: 0.9rem;
-                    color: $white;
+                    color: $primary-color;
                     font-weight: 200;
                     padding: 0 60px 0 0;
 
                     strong{
                         color: $primary-light;
+                        font-weight: normal;
                     }
                 }
             }
@@ -98,7 +99,7 @@ footer{
         }
 
         .foo-title{
-            color: $white;
+            color: $primary-light;
             font-size: 1.8rem;
             .pqn{
                 font-size: 1rem;
@@ -119,10 +120,10 @@ footer{
 
         p{
             color: $primary-light;
-            font: 0.8rem;
+            font-size: 0.8rem;
             strong{
-                color: $white;
-                font-weight: 400;
+                color: $primary-light;
+                font-weight: 700;
             }
         }
     }

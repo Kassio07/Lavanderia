@@ -991,8 +991,8 @@ footer .footer-container div ul {
   gap: 17px;
 }
 footer .footer-container div ul li a {
-  color: #004DA6;
-  font-weight: 500;
+  color: white;
+  font-weight: 300;
   transition: 0.5s;
 }
 footer .footer-container div ul li a:hover {
@@ -1007,12 +1007,13 @@ footer .footer-container .foo-col1 .foo-text {
 footer .footer-container .foo-col1 .foo-text p {
   text-align: justify;
   font-size: 0.9rem;
-  color: red;
+  color: white;
   font-weight: 200;
   padding: 0 60px 0 0;
 }
 footer .footer-container .foo-col1 .foo-text p strong {
   color: #36CDBC;
+  font-weight: normal;
 }
 footer .footer-container .foo-col1 .foo-social ul {
   display: flex;
@@ -1051,7 +1052,7 @@ footer .footer-container .foo-col4 {
   flex: 0.6;
 }
 footer .footer-container .foo-title {
-  color: red;
+  color: #36CDBC;
   font-size: 1.8rem;
 }
 footer .footer-container .foo-title .pqn {
@@ -1069,11 +1070,11 @@ footer .direitos {
 }
 footer .direitos p {
   color: #36CDBC;
-  font: 0.8rem;
+  font-size: 0.8rem;
 }
 footer .direitos p strong {
-  color: red;
-  font-weight: 400;
+  color: #36CDBC;
+  font-weight: 700;
 }
 footer .btnZap {
   position: fixed;
