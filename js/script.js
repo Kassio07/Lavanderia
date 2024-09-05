@@ -30,7 +30,7 @@ hamburguer.addEventListener("click", () => {
 let frame = c(".video video");
 function openClose() {
   let videoContainer = c(".video");
-  let iframeUrl = "img/higienização-de-estofados.mp4";
+  let iframeUrl = "img/nsclean-nova-serrana-qualidade.mp4";
   frame.src = iframeUrl;
   frame.removeAttribute("autoplay");
   setTimeout(() => {
@@ -39,12 +39,12 @@ function openClose() {
 }
 
 c(".btnVideo").addEventListener("click", () => {
-  c(".headerFixed").style.display = "none";
+  // c(".headerFixed").style.display = "none";
   openClose();
 });
 
 c("#closeVideo").addEventListener("click", () => {
-  c(".headerFixed").style.display = "block";
+  // c(".headerFixed").style.display = "block";
   openClose();
 });
 
@@ -54,7 +54,7 @@ let count = 1;
 document.getElementById("radio1").checked = true;
 setInterval(function () {
   nextImage();
-}, 4000);
+}, 5000);
 
 function nextImage() {
   count++;

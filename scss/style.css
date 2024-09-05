@@ -21,7 +21,7 @@ header .ajustHeader {
   height: 100px;
 }
 header .ajustHeader .logo img {
-  width: 110px;
+  width: 140px;
   margin-top: 20px;
   display: block;
 }
@@ -147,8 +147,8 @@ header .headerInfo .overflow .cardsHeaderContainer .card-item div h3 {
   color: white;
 }
 header .video {
-  background-color: white;
-  position: fixed;
+  background-color: transparent;
+  position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -161,11 +161,15 @@ header .video {
 header .video .fa-circle-xmark {
   display: flex;
   position: absolute;
-  top: 30px;
-  right: 7%;
+  top: 60px;
+  right: 19%;
   font-size: 30px;
   cursor: pointer;
   color: #36CDBC;
+}
+header .video video {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #000;
 }
 header .close {
   display: flex;
@@ -175,12 +179,12 @@ header .close {
   background-color: transparent;
 }
 .contact button a {
-  color: #004DA6;
+  color: #00ADEF;
   display: block;
   width: 150px;
   height: 45px;
   border-radius: 10px;
-  border: 2px solid #004DA6;
+  border: 2px solid #00ADEF;
   font-size: 1rem;
   font-weight: 100;
   letter-spacing: 4px;
@@ -188,9 +192,10 @@ header .close {
   line-height: 40px;
 }
 .contact a:hover {
-  border: 2px solid #00ADEF;
+  border: none;
   box-sizing: border-box;
-  color: #00ADEF;
+  color: #fff;
+  background-color: #004DA6;
 }
 
 @media (max-width: 768px) {
@@ -263,7 +268,7 @@ header .close {
     gap: 10px;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: red;
+    color: #fff;
     font-size: 1.6rem;
     margin-top: 40px;
   }
@@ -309,7 +314,7 @@ header .close {
     gap: 20px;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: red;
+    color: #fff;
     font-size: 1.9rem;
     margin-top: 40px;
   }
@@ -424,9 +429,11 @@ main .about .colsConatinerSectionOn .colSection-on .slider {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: relative;
+  height: 400px;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides {
   width: 400%;
+  height: 400px;
   display: flex;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides input {
@@ -447,10 +454,13 @@ main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio4:check
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide {
   width: 25%;
   transition: 1s;
+  position: relative;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
   width: 100%;
   height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div {
   border: 2px solid #00ADEF;
@@ -465,7 +475,7 @@ main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-a
   margin-top: 360px;
   display: flex;
   justify-content: center;
-  bottom: 26.5px;
+  bottom: 49.5px;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div:not(:last-child) {
   margin-right: 40px;
@@ -485,7 +495,7 @@ main .about .colsConatinerSectionOn .colSection-on .slider .slides #radio4:check
 main .about .colsConatinerSectionOn .colSection-on .slider .mnual-navigation {
   position: absolute;
   width: 100%;
-  margin-top: -40px;
+  margin-top: -63px;
   display: flex;
   justify-content: center;
 }
@@ -530,6 +540,9 @@ main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
   color: #000;
   font-weight: normal;
 }
+main .about .colsConatinerSectionOn .colSection-two .history {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
 main .about .colsConatinerSectionOn .colSection-two .btnHistory {
   width: 250px;
 }
@@ -537,6 +550,11 @@ main .about .colsConatinerSectionOn .colSection-two .btnHistory a {
   color: red;
   width: 250px;
   letter-spacing: 2px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+main .about .colsConatinerSectionOn .colSection-two .btnHistory a:hover {
+  color: white;
+  border: 2px solid #004DA6;
 }
 main .services {
   padding: 100px 0 150px 0;
@@ -563,7 +581,7 @@ main .services .service--cards .card--item {
   gap: 15px;
 }
 main .services .service--cards .card--item .card--img {
-  height: 180px;
+  height: 200px;
   display: flex;
   justify-content: center;
 }
@@ -952,12 +970,12 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 2.2em;
   }
   main .contact .contact-conatiner .col2-contact div .contact-text p:first-child {
-    color: red;
+    color: #fff;
     font-weight: 600;
     font-size: 1rem;
   }
   main .contact .contact-conatiner .col2-contact div .contact-text p:last-child {
-    color: red;
+    color: #fff;
     font-weight: 400;
     font-size: 0.7rem;
   }
@@ -1065,7 +1083,7 @@ footer .footer-container .foo-cols {
 footer .direitos {
   text-align: center;
   padding: 30px 0px;
-  border-top: 1px solid red;
+  border-top: 1px solid #fff;
   border-top-color: aqua;
 }
 footer .direitos p {
@@ -1106,7 +1124,7 @@ footer .btnZap::before {
   padding: 10px;
   border-radius: 15px;
   font-size: 0.7rem;
-  color: red;
+  color: #fff;
   font-weight: normal;
   letter-spacing: 2px;
   display: none;
