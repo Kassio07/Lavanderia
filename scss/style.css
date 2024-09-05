@@ -22,7 +22,6 @@ header .ajustHeader {
 }
 header .ajustHeader .logo img {
   width: 140px;
-  margin-top: 20px;
   display: block;
 }
 header .ajustHeader .noneImg {
@@ -58,7 +57,7 @@ header .ajustHeader .copy {
 }
 header .headerInfo {
   padding-top: 70px;
-  background-color: white;
+  background-color: #CEE3FD;
 }
 header .headerInfo .overflow .header {
   display: flex;
@@ -73,7 +72,7 @@ header .headerInfo .overflow .header .col1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 7px;
 }
 header .headerInfo .overflow .header .col1 .titleHeader {
   display: flex;
@@ -315,14 +314,14 @@ header .close {
     gap: 20px;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: #fff;
+    color: #004DA6;
     font-size: 1.9rem;
     margin-top: 40px;
   }
   header .headerInfo .overflow .header .col1 .subtitleHeader {
     font-size: 1rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.7058823529);
+    color: #7f8c8d;
     margin-bottom: 15px;
   }
   header .headerInfo .overflow .header .col2 {
