@@ -306,6 +306,9 @@ header .close {
   }
 }
 @media (max-width: 576px) {
+  header .headerInfo {
+    background-color: #fff;
+  }
   header .headerInfo .overflow .header {
     height: 320vh;
     flex-direction: column-reverse;
