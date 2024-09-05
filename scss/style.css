@@ -338,6 +338,9 @@ header .close {
   header .headerInfo .overflow .cardsHeaderContainer .card-item {
     width: 100%;
   }
+  header .ajustHeader .logo img {
+    width: 110px;
+  }
 }
 @keyframes animationBtbMenu {
   0% {
