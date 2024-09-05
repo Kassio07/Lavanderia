@@ -307,7 +307,7 @@ header .close {
 }
 @media (max-width: 576px) {
   header .headerInfo .overflow .header {
-    height: 223vh;
+    height: 320vh;
     flex-direction: column-reverse;
   }
   header .headerInfo .overflow .header .col1 {
@@ -315,7 +315,7 @@ header .close {
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #004DA6;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin-top: 40px;
   }
   header .headerInfo .overflow .header .col1 .subtitleHeader {

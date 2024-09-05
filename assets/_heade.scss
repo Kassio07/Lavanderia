@@ -362,14 +362,14 @@ header {
     .headerInfo {
       .overflow {
         .header {
-          height: 223vh;
+          height: 320vh;
           flex-direction: column-reverse;
           .col1 {
             gap: 20px;
             .titleHeader {
               h1{
               color: $color-dark;
-              font-size: 1.9rem;
+              font-size: 1.5rem;
               margin-top: 40px;
               }
             }
