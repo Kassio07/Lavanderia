@@ -162,7 +162,7 @@ header .video .fa-circle-xmark {
   display: flex;
   position: absolute;
   top: 60px;
-  right: 19%;
+  right: 12%;
   font-size: 30px;
   cursor: pointer;
   color: #36CDBC;
@@ -186,8 +186,8 @@ header .close {
   border-radius: 10px;
   border: 2px solid #00ADEF;
   font-size: 1rem;
-  font-weight: 100;
-  letter-spacing: 4px;
+  font-weight: 400;
+  letter-spacing: 3px;
   transition: ease-in 0.5s;
   line-height: 40px;
 }
@@ -196,6 +196,7 @@ header .close {
   box-sizing: border-box;
   color: #fff;
   background-color: #004DA6;
+  border: 2px solid #004DA6;
 }
 
 @media (max-width: 768px) {
@@ -206,7 +207,7 @@ header .close {
     top: 30px;
     font-size: 30px;
     cursor: pointer;
-    color: #36CDBC;
+    color: #004DA6;
     z-index: 9999;
     animation-name: animationBtbMenu;
     animation-duration: 1s;
@@ -268,14 +269,14 @@ header .close {
     gap: 10px;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: #fff;
+    color: #004DA6;
     font-size: 1.6rem;
     margin-top: 40px;
   }
   header .headerInfo .overflow .header .col1 .subtitleHeader {
     font-size: 1rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.7058823529);
+    color: #7f8c8d;
     margin-bottom: 15px;
   }
   header .headerInfo .overflow .header .col2 .imgHeader {
@@ -853,7 +854,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 0.9rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
-    color: white;
+    color: #000;
   }
   main .about .colsConatinerSectionOn .colSection-two .btnHistory {
     color: red;
@@ -928,7 +929,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 1rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 strong {
-    color: white;
+    color: #000;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul {
     gap: 8px;
@@ -937,7 +938,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     font-size: 0.9rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .listService ul li strong {
-    color: white;
+    color: #000;
   }
   main .about .colsConatinerSectionOn .colSection-two .history {
     margin-right: 10px;
@@ -955,6 +956,10 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   }
   main .services .service--cards .card--item {
     width: 100%;
+    height: 450px;
+  }
+  main .services .service--cards .card--item .card--img {
+    height: 250px;
   }
   main .services .subtitle--section {
     padding: 0 0 80px 0;
@@ -964,7 +969,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     background-color: #fff;
     font-size: 1.4rem;
     text-transform: uppercase;
-    color: white;
+    color: #004DA6;
   }
   main .contact .contact-conatiner .col2-contact div div i {
     font-size: 2.2em;

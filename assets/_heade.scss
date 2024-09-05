@@ -179,7 +179,7 @@ header {
       display: flex;
       position: absolute;
       top: 60px;
-      right: 19%;
+      right: 12%;
       font-size: 30px;
       cursor: pointer;
       color: $primary-light;
@@ -207,8 +207,8 @@ header {
       border-radius: 10px;
       border: 2px solid $secondary-color;
       font-size: 1rem;
-      font-weight: 100;
-      letter-spacing: 4px;
+      font-weight: 400;
+      letter-spacing: 3px;
       transition: ease-in 0.5s;
       line-height: 40px;
     }
@@ -218,6 +218,8 @@ header {
     box-sizing: border-box;
     color: $white;
     background-color: $color-dark;
+    border: 2px solid $color-dark;
+
   }
 }
 
@@ -230,7 +232,7 @@ header {
       top: 30px;
       font-size: 30px;
       cursor: pointer;
-      color: $primary-light;
+      color: $color-dark;
 
       z-index: 9999;
 
@@ -304,7 +306,7 @@ header {
 
             .titleHeader {
               h1{
-              color: $white;
+              color: $color-dark;
               font-size: 1.6rem;
               margin-top: 40px;
               }
@@ -312,12 +314,14 @@ header {
             .subtitleHeader {
               font-size: 1rem;
               font-weight: 400;
-              color: #ffffffb4;
+              color: #7f8c8d;
               margin-bottom: 15px;
             }
           }
 
           .col2 {
+
+           
             .imgHeader {
               display: flex;
               justify-content: center;
