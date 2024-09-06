@@ -56,16 +56,14 @@ header .ajustHeader .copy {
   display: none;
 }
 header .headerInfo {
-  padding-top: 70px;
-  background-color: #CEE3FD;
+  background-color: white;
 }
 header .headerInfo .overflow .header {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  height: 100vh;
-  padding-top: 122px;
+  height: 90vh;
 }
 header .headerInfo .overflow .header .col1 {
   flex: 1;
@@ -83,12 +81,16 @@ header .headerInfo .overflow .header .col1 .titleHeader h1 {
   font-size: 2.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  max-width: 90%;
 }
 header .headerInfo .overflow .header .col1 .subtitleHeader {
   color: #7f8c8d;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 36px;
+}
+header .headerInfo .overflow .header .col1 .subtitleHeader strong {
+  font-weight: normal;
 }
 header .headerInfo .overflow .header .col1 .contactHeader {
   display: flex;
@@ -110,10 +112,20 @@ header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-vi
 }
 header .headerInfo .overflow .header .col2 {
   flex: 0.7;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+header .headerInfo .overflow .header .col2 .imgHeader {
+  display: flex;
+  justify-content: center;
+}
+header .headerInfo .overflow .header .col2 .imgHeader img {
+  width: 70%;
 }
 header .headerInfo .overflow .cardsHeaderContainer {
   position: absolute;
-  top: 82vh;
+  top: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -198,6 +210,54 @@ header .close {
   border: 2px solid #004DA6;
 }
 
+@media (max-width: 576px) {
+  header .headerInfo {
+    background-color: #fff;
+  }
+  header .headerInfo .overflow .header {
+    height: 212vh;
+    flex-direction: column-reverse;
+  }
+  header .headerInfo .overflow .header .col1 {
+    gap: 20px;
+  }
+  header .headerInfo .overflow .header .col1 .titleHeader h1 {
+    color: #004DA6;
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+  header .headerInfo .overflow .header .col1 .subtitleHeader {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+  }
+  header .headerInfo .overflow .header .col2 {
+    flex: 0.1;
+  }
+  header .headerInfo .overflow .header .col2 .imgHeader img {
+    width: 100%;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer {
+    top: 105vh;
+    flex-direction: column;
+    gap: 7px;
+  }
+  header .headerInfo .overflow .cardsHeaderContainer .card-item {
+    width: 100%;
+  }
+  header .ajustHeader .logo img {
+    width: 110px;
+  }
+}
+@keyframes animationBtbMenu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
 @media (max-width: 768px) {
   header .btnHamburguer {
     display: flex;
@@ -259,8 +319,11 @@ header .close {
   header .ajustHeader .openModal {
     display: flex;
   }
+  header .headerInfo {
+    height: 150vh;
+  }
   header .headerInfo .overflow .header {
-    padding-top: 50px;
+    padding-top: 227px;
     flex-direction: column-reverse;
     height: 100vh;
   }
@@ -279,14 +342,14 @@ header .close {
     margin-bottom: 15px;
   }
   header .headerInfo .overflow .header .col2 .imgHeader {
-    display: flex;
+    display: none;
     justify-content: center;
   }
   header .headerInfo .overflow .header .col2 .imgHeader img {
     width: 60%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
-    top: 84vh;
+    top: 130vh;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -305,56 +368,23 @@ header .close {
     font-size: 1rem;
   }
 }
-@media (max-width: 576px) {
-  header .headerInfo {
-    background-color: #fff;
-  }
+@media (max-width: 996px) {
   header .headerInfo .overflow .header {
-    height: 212vh;
-    flex-direction: column-reverse;
-  }
-  header .headerInfo .overflow .header .col1 {
-    gap: 20px;
-  }
-  header .headerInfo .overflow .header .col1 .titleHeader h1 {
-    color: #004DA6;
-    font-size: 1.5rem;
-    margin-top: 40px;
-  }
-  header .headerInfo .overflow .header .col1 .subtitleHeader {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #7f8c8d;
-    margin-bottom: 15px;
+    height: 100vh;
   }
   header .headerInfo .overflow .header .col2 {
-    flex: 0.1;
+    flex: 0.7;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
-  header .headerInfo .overflow .header .col2 .imgHeader img {
-    width: 100%;
-  }
-  header .headerInfo .overflow .cardsHeaderContainer {
-    top: 105vh;
-    flex-direction: column;
-    gap: 7px;
-  }
-  header .headerInfo .overflow .cardsHeaderContainer .card-item {
-    width: 100%;
-  }
-  header .ajustHeader .logo img {
-    width: 110px;
-  }
-}
-@keyframes animationBtbMenu {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20px);
+  header .headerInfo .overflow .header .col2 .imgHeader {
+    display: flex;
+    justify-content: center;
   }
 }
 main {
-  padding-top: 200px;
+  padding-top: 385px;
   padding-right: 10px;
   overflow-x: hidden;
 }
