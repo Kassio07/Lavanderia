@@ -691,6 +691,12 @@ main {
           .slider {
             margin-right: 10px;
             .slides {
+
+              .slide{
+                img{
+                  object-fit: cover;
+                }
+              }
             }
           }
         }

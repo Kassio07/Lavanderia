@@ -245,6 +245,7 @@ header {
           flex-direction: column-reverse;
           .col1 {
             gap: 20px;
+            order: 2;
             .titleHeader {
               h1 {
                 color: $color-dark;
@@ -261,7 +262,7 @@ header {
           }
           .col2 {
             flex: 0.1;
-
+            order: 2;
             .imgHeader {
               img {
                 min-width: 90%;
@@ -379,7 +380,6 @@ header {
 
           .col1 {
             gap: 10px;
-            order: 1;
             .titleHeader {
               h1 {
                 color: $color-dark;
@@ -396,7 +396,6 @@ header {
           }
 
           .col2 {
-            order: 2;
             .imgHeader {
               display: none;
               justify-content: center;

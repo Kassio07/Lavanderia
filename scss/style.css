@@ -220,6 +220,7 @@ header .close {
   }
   header .headerInfo .overflow .header .col1 {
     gap: 20px;
+    order: 2;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #004DA6;
@@ -234,6 +235,7 @@ header .close {
   }
   header .headerInfo .overflow .header .col2 {
     flex: 0.1;
+    order: 2;
   }
   header .headerInfo .overflow .header .col2 .imgHeader img {
     min-width: 90%;
@@ -329,7 +331,6 @@ header .close {
   }
   header .headerInfo .overflow .header .col1 {
     gap: 10px;
-    order: 1;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #004DA6;
@@ -341,9 +342,6 @@ header .close {
     font-weight: 400;
     color: #7f8c8d;
     margin-bottom: 15px;
-  }
-  header .headerInfo .overflow .header .col2 {
-    order: 2;
   }
   header .headerInfo .overflow .header .col2 .imgHeader {
     display: none;
@@ -966,6 +964,10 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   }
   main .about .colsConatinerSectionOn .colSection-on .slider {
     margin-right: 10px;
+  }
+  main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
     font-size: 1rem;
