@@ -264,7 +264,7 @@ header {
 
             .imgHeader {
               img {
-                width: 100%;
+                min-width: 90%;
               }
             }
           }
@@ -379,6 +379,7 @@ header {
 
           .col1 {
             gap: 10px;
+            order: 1;
             .titleHeader {
               h1 {
                 color: $color-dark;
@@ -395,11 +396,12 @@ header {
           }
 
           .col2 {
+            order: 2;
             .imgHeader {
               display: none;
               justify-content: center;
               img {
-                width: 60 %;
+                width: 65%;
               }
             }
           }
@@ -447,6 +449,7 @@ header {
             .imgHeader {
               display: flex;
               justify-content: center;
+              
             }
           }
         }

@@ -1,7 +1,7 @@
 main {
-  padding-top: 385px;
   padding-right: 10px;
   overflow-x: hidden;
+  padding-top: 500px;
   .titleSection {
     width: 100%;
     text-align: start;
@@ -566,6 +566,7 @@ main {
 
 @media (max-width: 768px) {
   main {
+    padding-top: 200px;
     .about {
       .colsConatinerSectionOn {
         gap: 40px;
@@ -676,7 +677,7 @@ main {
 
 @media (max-width: 576px) {
   main {
-    padding-top: 120px;
+    padding-top: 800px;
     .about {
       .colsConatinerSectionOn {
         flex-direction: column;

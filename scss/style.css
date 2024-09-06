@@ -236,7 +236,7 @@ header .close {
     flex: 0.1;
   }
   header .headerInfo .overflow .header .col2 .imgHeader img {
-    width: 100%;
+    min-width: 90%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
     top: 105vh;
@@ -329,6 +329,7 @@ header .close {
   }
   header .headerInfo .overflow .header .col1 {
     gap: 10px;
+    order: 1;
   }
   header .headerInfo .overflow .header .col1 .titleHeader h1 {
     color: #004DA6;
@@ -341,12 +342,15 @@ header .close {
     color: #7f8c8d;
     margin-bottom: 15px;
   }
+  header .headerInfo .overflow .header .col2 {
+    order: 2;
+  }
   header .headerInfo .overflow .header .col2 .imgHeader {
     display: none;
     justify-content: center;
   }
   header .headerInfo .overflow .header .col2 .imgHeader img {
-    width: 60%;
+    width: 65%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
     top: 130vh;
@@ -384,9 +388,9 @@ header .close {
   }
 }
 main {
-  padding-top: 385px;
   padding-right: 10px;
   overflow-x: hidden;
+  padding-top: 500px;
 }
 main .titleSection {
   width: 100%;
@@ -870,6 +874,9 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
 }
 
 @media (max-width: 768px) {
+  main {
+    padding-top: 200px;
+  }
   main .about .colsConatinerSectionOn {
     gap: 40px;
   }
@@ -949,7 +956,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
 }
 @media (max-width: 576px) {
   main {
-    padding-top: 120px;
+    padding-top: 800px;
   }
   main .about .colsConatinerSectionOn {
     flex-direction: column;
