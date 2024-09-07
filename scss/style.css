@@ -326,7 +326,7 @@ header .close {
     height: 150vh;
   }
   header .headerInfo .overflow .header {
-    padding-top: 150px;
+    padding-top: 260px;
     flex-direction: column-reverse;
     height: 100vh;
   }

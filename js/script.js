@@ -73,6 +73,7 @@ cs(".scrolllTo li a").forEach((link) => {
     const targetId = this.getAttribute("href");
     const targetSection = c(targetId);
 
+
     targetSection.scrollIntoView({
       behavior: "smooth",
     });
