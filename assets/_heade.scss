@@ -127,12 +127,13 @@ header {
           flex: 0.7;
           height: 100%;
           display: flex;
-          align-items: flex-end;
+          align-items: center;
+          padding-top: 150px;
           .imgHeader {
             display: flex;
             justify-content: center;
             img {
-              width: 70%;
+              width: 100%;
             }
           }
         }
@@ -374,7 +375,7 @@ header {
       height: 150vh;
       .overflow {
         .header {
-          padding-top: 227px;
+          padding-top: 150px;
           flex-direction: column-reverse;
           height: 100vh;
 
@@ -445,6 +446,7 @@ header {
             height: 100%;
             display: flex;
             align-items: center;
+            padding-top: 0;
             .imgHeader {
               display: flex;
               justify-content: center;
