@@ -327,7 +327,7 @@ header {
     .ajustHeader {
       .menuNav {
         background-color: $primary-light;
-        width: 80%;
+        width: 90%;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -335,7 +335,7 @@ header {
         height: 80vh;
         left: 50%;
         transform: translateX(-50%);
-        top: 50%;
+        top: 65%;
         border-radius: 20px;
         transition: all 0.5s linear;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,

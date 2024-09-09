@@ -10,7 +10,6 @@ let menu = c(".menuNav");
 
 hamburguer.addEventListener("click", () => {
   menu.classList.toggle("openModal");
-  logo.classList.toggle("noneImg");
 
   menu.style.opacity = 0;
   setTimeout(() => {
@@ -73,13 +72,17 @@ cs(".scrolllTo li a").forEach((link) => {
     const targetId = this.getAttribute("href");
     const targetSection = c(targetId);
 
+    if (menu.classList.contains("openModal")) {
+      menu.classList.toggle("openModal");
+      c(".fa-circle-xmark").style.display = "none";
+      c(".fa-bars").style.display = "flex";
+    }
 
     targetSection.scrollIntoView({
       behavior: "smooth",
     });
   });
 });
-
 
 // slide testimonials
 
@@ -101,7 +104,3 @@ function nextSlideTestimonials() {
 }
 
 // End slide testimonials
-
-
-
-
