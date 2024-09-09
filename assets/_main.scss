@@ -255,7 +255,7 @@ main {
   // Serviço -------------------------------
 
   .services {
-    padding: 100px 0 150px 0;
+    padding: 100px 0 80px 0;
 
     .titleSection {
       padding-bottom: 80px;
@@ -344,6 +344,30 @@ main {
             }
           }
         }
+      }
+    }
+  }
+
+  // Galery video
+  .galery {
+    margin: 100px 0;
+    .galeryContainer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      .video-item {
+        // background-color: red;
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        overflow: hidden;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        border-radius: 15px;
       }
     }
   }
