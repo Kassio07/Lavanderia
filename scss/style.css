@@ -511,7 +511,7 @@ main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
      object-fit: fill;
 }
 main .about .colsConatinerSectionOn .colSection-on .slider .slides .navigation-auto div {
-  border: 2px solid #00ADEF;
+  border: 2px solid white;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -844,7 +844,7 @@ main .testemunhas .slider2 #radio-5:checked ~ .first2 {
 main .testemunhas .slider2 .manual-navigation2 {
   width: 100%;
   position: absolute;
-  margin-top: 40px;
+  margin-top: 39.5px;
   display: flex;
   justify-content: center;
 }
@@ -874,13 +874,13 @@ main .contact .contact-conatiner .col1-contact {
 main .contact .contact-conatiner .col2-contact {
   flex: 1;
   padding: 25px;
-  background-color: #002E64;
+  background-color: #002e64;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 main .contact .contact-conatiner .col2-contact div {
-  background-color: #001F42;
+  background-color: #001f42;
   width: 100%;
   height: 80px;
   display: flex;
