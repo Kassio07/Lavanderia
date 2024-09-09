@@ -126,7 +126,7 @@ header .headerInfo .overflow .header .col2 .imgHeader img {
 }
 header .headerInfo .overflow .cardsHeaderContainer {
   position: absolute;
-  top: 115vh;
+  top: 85vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -710,7 +710,7 @@ main .galery .galeryContainer .video-item {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   overflow: hidden;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   border-radius: 15px;
