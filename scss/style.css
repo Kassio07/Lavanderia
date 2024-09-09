@@ -63,14 +63,14 @@ header .headerInfo .overflow .header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 100 vh;
+  padding: 100px 0 0 0;
 }
 header .headerInfo .overflow .header .col1 {
   flex: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 7px;
 }
 header .headerInfo .overflow .header .col1 .titleHeader {
   display: flex;
@@ -112,21 +112,21 @@ header .headerInfo .overflow .header .col1 .contactHeader .videoheader .modal-vi
 }
 header .headerInfo .overflow .header .col2 {
   flex: 0.7;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-top: 150px;
 }
 header .headerInfo .overflow .header .col2 .imgHeader {
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  overflow: hidden;
+  height: 580px;
 }
 header .headerInfo .overflow .header .col2 .imgHeader img {
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 header .headerInfo .overflow .cardsHeaderContainer {
   position: absolute;
-  top: 100vh;
+  top: 115vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -352,7 +352,7 @@ header .close {
     width: 65%;
   }
   header .headerInfo .overflow .cardsHeaderContainer {
-    top: 130vh;
+    top: 140vh;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -442,7 +442,6 @@ main .about .colsConatinerSectionOn .colSection-on .titleLocation {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  letter-spacing: 1px;
   font-weight: normal;
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
@@ -460,7 +459,6 @@ main .about .colsConatinerSectionOn .colSection-on .titleLocation p .destaque {
 }
 main .about .colsConatinerSectionOn .colSection-on .titleLocation p:last-child {
   font-size: 1rem;
-  text-align: justify;
 }
 main .about .colsConatinerSectionOn .colSection-on .textLocation {
   width: 100%;
@@ -469,7 +467,6 @@ main .about .colsConatinerSectionOn .colSection-on .textLocation p {
   font-size: 1rem;
   font-weight: normal;
   text-indent: 30px;
-  text-align: justify;
 }
 main .about .colsConatinerSectionOn .colSection-on .textLocation p strong {
   font-weight: normal;
@@ -696,6 +693,42 @@ main .services .service--cards .card--item .card--button a:hover {
 }
 main .services .service--cards .card--item .card--button span i {
   color: #00ADEF;
+}
+main .faixaCTA {
+  background-color: #004DA6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  margin-bottom: 150px;
+  gap: 50px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+main .faixaCTA .containerCTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .faixaCTA h2 {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+main .faixaCTA a {
+  color: #00ADEF;
+  display: flex;
+  font-size: 1rem;
+}
+main .faixaCTA a i {
+  font-size: 1.5rem;
+  margin-right: 7px;
+}
+main .faixaCTA a:not(:last-child) {
+  margin-right: 120px;
 }
 main .testemunhas {
   padding-bottom: 200px;
@@ -964,6 +997,24 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   main .subtitle--section {
     padding-bottom: 70px;
   }
+  main .faixaCTA {
+    margin-right: 80px;
+  }
+  main .faixaCTA h2 {
+    font-size: 1.5rem;
+  }
+  main .faixaCTA a {
+    color: #00ADEF;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  main .faixaCTA a i {
+    font-size: 1.5rem;
+    margin-right: 7px;
+  }
+  main .faixaCTA a:not(:last-child) {
+    margin-right: 70px;
+  }
   .contact .contact-conatiner {
     flex-direction: column;
   }
@@ -979,7 +1030,10 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     flex-direction: column;
   }
   main .about .colsConatinerSectionOn .colSection-on .titleLocation p {
-    font-size: 16px;
+    font-size: 1rem;
+  }
+  main .about .colsConatinerSectionOn .colSection-on .titleLocation p:last-child {
+    font-size: 0.9rem;
   }
   main .about .colsConatinerSectionOn .colSection-on .slider {
     margin-right: 10px;
@@ -987,6 +1041,9 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
   main .about .colsConatinerSectionOn .colSection-on .slider .slides .slide img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  main .about .colsConatinerSectionOn .colSection-on .textLocation p {
+    font-size: 0.9rem;
   }
   main .about .colsConatinerSectionOn .colSection-two .title-two h3 {
     font-size: 1rem;
@@ -1014,21 +1071,21 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     margin-left: 50%;
     transform: translateX(-50%);
   }
-  main .services {
+  main .ser vices {
     padding: 0 0 150px 0;
   }
-  main .services .service--cards .card--item {
+  main .ser vices .service--cards .card--item {
     width: 100%;
     height: 450px;
   }
-  main .services .service--cards .card--item .card--img {
+  main .ser vices .service--cards .card--item .card--img {
     height: 250px;
   }
-  main .services .subtitle--section {
+  main .ser vices .subtitle--section {
     padding: 0 0 80px 0;
     text-align: center;
   }
-  main .services .subtitle--section h2 {
+  main .ser vices .subtitle--section h2 {
     background-color: #fff;
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -1046,6 +1103,23 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     color: #fff;
     font-weight: 400;
     font-size: 0.7rem;
+  }
+  main .faixaCTA .containerCTA {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  main .faixaCTA h2 {
+    font-size: 1.2rem;
+  }
+  main .faixaCTA a {
+    font-size: 0.7rem;
+  }
+  main .faixaCTA a i {
+    font-size: 1.5rem;
+    margin-right: 7px;
+  }
+  main .faixaCTA a:not(:last-child) {
+    margin-right: 40px;
   }
 }
 @media (max-width: 992px) {
