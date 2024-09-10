@@ -377,19 +377,18 @@ main {
 
   // CTA
   .faixaCTA {
-    background-color: $color-dark;
+    // background-color: $color-dark;
+    background-color: $secondary-color;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
-    margin-bottom: 150px;
+    padding: 50px 0;
+    margin: 150px 0;
     gap: 50px;
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     .containerCTA {
       display: flex;
       flex-direction: row;
@@ -403,9 +402,10 @@ main {
     }
 
     a {
-      color: $secondary-color;
+      color: $color-dark;
       display: flex;
       font-size: 1rem;
+      font-weight: 700;
       i {
         font-size: 1.5rem;
         margin-right: 7px;
