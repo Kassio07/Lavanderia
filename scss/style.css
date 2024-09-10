@@ -706,14 +706,15 @@ main .galery .galeryContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  align-content: space-between;
   gap: 20px;
 }
 main .galery .galeryContainer .video-item {
   position: relative;
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
+  flex-grow: 1;
   margin: 0 auto;
   padding: 20px;
   overflow: hidden;
