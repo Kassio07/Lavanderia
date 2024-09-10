@@ -126,7 +126,7 @@ header .headerInfo .overflow .header .col2 .imgHeader img {
 }
 header .headerInfo .overflow .cardsHeaderContainer {
   position: absolute;
-  top: 85vh;
+  top: 110vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -385,6 +385,11 @@ header .close {
   header .headerInfo .overflow .header .col2 .imgHeader {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  header .headerInfo .overflow .cardsHeaderContainer {
+    top: 140vh;
   }
 }
 main {
@@ -772,12 +777,14 @@ main .testemunhas .slider2 .slides2 input {
 }
 main .testemunhas .slider2 .slides2 .slide2 {
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   width: 7.8%;
   height: 350px;
-  padding: 30px;
   margin: 10px;
   transition: 2s;
+  text-align: center;
+}
+main .testemunhas .slider2 .slides2 .slide2 img {
+  width: 200px;
 }
 main .testemunhas .slider2 .slides2 .slide2 .slide-img img {
   width: 80px;

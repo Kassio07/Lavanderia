@@ -142,7 +142,7 @@ header {
 
       .cardsHeaderContainer {
         position: absolute;
-        top: 85vh;
+        top: 110vh;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -454,6 +454,20 @@ header {
               
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  header{
+
+    .headerInfo{
+
+      .overflow{
+        .cardsHeaderContainer{
+          top: 140vh;
         }
       }
     }
