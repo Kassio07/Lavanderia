@@ -63,7 +63,7 @@ header .headerInfo .overflow .header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100 vh;
+  height: 100vh;
   padding: 100px 0 0 0;
 }
 header .headerInfo .overflow .header .col1 {
@@ -385,11 +385,6 @@ header .close {
   header .headerInfo .overflow .header .col2 .imgHeader {
     display: flex;
     justify-content: center;
-  }
-}
-@media (max-width: 1200px) {
-  header .headerInfo .overflow .cardsHeaderContainer {
-    top: 140vh;
   }
 }
 main {
