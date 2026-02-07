@@ -11,6 +11,8 @@
 @import"../assets/footer";
 
 
+// Resets
+
 body{
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -52,4 +54,5 @@ h2{
 
 p{
     font-size: 1rem;
+    text-indent: inherit;
 }
