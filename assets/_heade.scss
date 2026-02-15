@@ -172,6 +172,7 @@ header {
 
             h3 {
               color: $primary-color;
+              font-weight: 300;
             }
           }
         }
@@ -221,7 +222,7 @@ header {
       height: 45px;
       border-radius: 10px;
       border: 2px solid $secondary-color;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 400;
       letter-spacing: 3px;
       transition: ease-in 0.5s;

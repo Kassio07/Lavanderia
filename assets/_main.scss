@@ -139,11 +139,11 @@ main {
             rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
         }
         .btnHistory {
-          width: 250px;
+          width: 100%;
 
           a {
             color: red;
-            width: 250px;
+            width: 100%;
             letter-spacing: 2px;
             box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
               rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -283,8 +283,8 @@ main {
 
   // CTA
   .faixaCTA {
-    // background-color: $color-dark;
-    background-color: $secondary-color;
+    background-color: $color-dark;
+    // background-color: $primary-color;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -308,10 +308,10 @@ main {
     }
 
     a {
-      color: $color-dark;
+      color: $white;
       display: flex;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: 500;
       i {
         font-size: 1.5rem;
         margin-right: 7px;
@@ -575,7 +575,7 @@ main {
           }
           .btnHistory {
             color: red;
-            width: 250px;
+            width: 100%;
           }
         }
       }
@@ -725,7 +725,7 @@ main {
           }
           .btnHistory {
             color: red;
-            width: 250px;
+            width: 100%;
           }
 
           .btnHistory {
