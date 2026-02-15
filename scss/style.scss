@@ -50,12 +50,24 @@ h2 {
   font-size: 2rem;
 }
 
-p {
+p, .p{
   font-size: 1rem;
   text-indent: inherit;
-  line-height: 30px;
+  line-height: 24px;
+  color: #575959;
 }
 
+li{
+  color: #575959;
+}
+
+.stron{
+  color: #575959 !important;
+}
+
+.stron strong{
+  color: #575959 !important;
+}
 // Slides da página
 
 .slider {

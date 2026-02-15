@@ -640,7 +640,6 @@ main {
       }
 
       a {
-        color: $secondary-color;
         display: flex;
         font-size: 0.8rem;
         i {
@@ -737,7 +736,7 @@ main {
       }
     }
 
-    .ser vices {
+    .services {
       padding: 0 0 150px 0;
       .service--cards {
         .card--item {
@@ -790,7 +789,7 @@ main {
         gap: 20px;
       }
       h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       a {
