@@ -242,8 +242,11 @@ header .close {
   header .headerInfo .overflow .header .col2 .imgHeader img {
     min-width: 90%;
   }
+  header .headerInfo .overflow .header .col2 .slider {
+    max-width: 97% !important;
+  }
   header .headerInfo .overflow .cardsHeaderContainer {
-    top: 105vh;
+    top: 115vh !important;
     flex-direction: column;
     gap: 7px;
   }
@@ -1143,7 +1146,7 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
 }
 @media (max-width: 576px) {
   main {
-    padding-top: 800px;
+    padding-top: 615px;
   }
   main .about .colsConatinerSectionOn {
     flex-direction: column;
@@ -1222,6 +1225,9 @@ main .contact .contact-conatiner .col2-contact div .contact-text p:last-child a 
     color: #fff;
     font-weight: 400;
     font-size: 0.7rem;
+  }
+  main .contact button a {
+    font-size: 0.9rem;
   }
   main .faixaCTA .containerCTA {
     flex-wrap: wrap;

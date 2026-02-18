@@ -669,7 +669,7 @@ main {
 
 @media (max-width: 576px) {
   main {
-    padding-top: 800px;
+    padding-top: 615px;
     .about {
       .colsConatinerSectionOn {
         flex-direction: column;
@@ -779,6 +779,12 @@ main {
               font-size: 0.7rem;
             }
           }
+        }
+      }
+
+      button{
+        a{
+          font-size: 0.9rem;
         }
       }
     }

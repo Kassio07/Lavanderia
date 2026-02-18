@@ -271,11 +271,15 @@ header {
                 min-width: 90%;
               }
             }
+
+            .slider{
+              max-width: 97% !important;
+            }
           }
         }
 
         .cardsHeaderContainer {
-          top: 105vh;
+          top: 115vh !important;
           flex-direction: column;
           gap: 7px;
           .card-item {
