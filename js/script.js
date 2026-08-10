@@ -1,106 +1,73 @@
-"use strict";
-AOS.init();
+'use strict';
 
-let c = (a) => document.querySelector(a);
-let cs = (a) => document.querySelectorAll(a);
-
-let logo = c(".logo");
-let hamburguer = c(".btnHamburguer");
-let menu = c(".menuNav");
-
-hamburguer.addEventListener("click", () => {
-  menu.classList.toggle("openModal");
-
-  menu.style.opacity = 0;
-  setTimeout(() => {
-    if (menu.classList.contains("openModal")) {
-      c(".fa-bars").style.display = "none";
-      c(".fa-circle-xmark").style.display = "flex";
-      menu.style.opacity = 1;
-    } else {
-      c(".fa-bars").style.display = "flex";
-      c(".fa-circle-xmark").style.display = "none";
-    }
-  }, 200);
+const menuButton = document.querySelector('.menu-toggle');
+const menu = document.querySelector('#menu');
+menuButton.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
 });
-
-// Video header
-
-let frame = c(".video video");
-function openClose() {
-  let videoContainer = c(".video");
-  let iframeUrl = "img/ns-clean-higienizacao.mp4";
-  frame.src = iframeUrl;
-  frame.removeAttribute("autoplay");
-  setTimeout(() => {
-    videoContainer.classList.toggle("close");
-  }, 300);
-}
-
-c(".btnVideo").addEventListener("click", () => {
-  // c(".headerFixed").style.display = "none";
-  openClose();
-});
-
-c("#closeVideo").addEventListener("click", () => {
-  // c(".headerFixed").style.display = "block";
-  openClose();
-});
-
-// Slider About
-
-let count = 1;
-document.getElementById("radio1").checked = true;
-setInterval(function () {
-  nextImage();
-}, 5000);
-
-function nextImage() {
-  count++;
-  if (count > 4) {
-    count = 1;
+menu.addEventListener('click', event => {
+  if (event.target.matches('a')) {
+    menu.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
   }
-  document.getElementById("radio" + count).checked = true;
+});
+
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: .12 });
+  revealItems.forEach(item => revealObserver.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add('visible'));
 }
 
-// Event scrolly
+const counter = document.querySelector('[data-counter]');
+const counterObserver = new IntersectionObserver(([entry], observer) => {
+  if (!entry.isIntersecting) return;
+  const total = Number(counter.dataset.counter);
+  let value = 0;
+  const timer = setInterval(() => {
+    value += 1;
+    counter.textContent = value;
+    if (value >= total) clearInterval(timer);
+  }, 130);
+  observer.disconnect();
+}, { threshold: .5 });
+counterObserver.observe(counter);
 
-cs(".scrolllTo li a").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+const compare = document.querySelector('.compare');
+compare.querySelector('input').addEventListener('input', event => {
+  compare.style.setProperty('--position', `${event.target.value}%`);
+});
 
-    const targetId = this.getAttribute("href");
-    const targetSection = c(targetId);
-
-    if (menu.classList.contains("openModal")) {
-      menu.classList.toggle("openModal");
-      c(".fa-circle-xmark").style.display = "none";
-      c(".fa-bars").style.display = "flex";
-    }
-
-    targetSection.scrollIntoView({
-      behavior: "smooth",
-    });
+const modal = document.querySelector('.video-modal');
+const modalVideo = modal.querySelector('video');
+const modalTitle = modal.querySelector('h3');
+const modalDescription = modal.querySelector('p');
+document.querySelectorAll('.video-card').forEach(card => {
+  card.querySelector('button').addEventListener('click', () => {
+    modalVideo.src = card.dataset.video;
+    modalTitle.textContent = card.querySelector('h3').textContent;
+    modalDescription.textContent = card.querySelector('p').textContent;
+    modal.showModal();
+    modalVideo.play().catch(() => {});
   });
 });
-
-// slide testimonials
-
-let cont = 1;
-document.getElementById("radio-1").checked = true;
-
-setInterval(function () {
-  nextSlideTestimonials();
-}, 4000);
-
-function nextSlideTestimonials() {
-  cont++;
-
-  if (cont > 5) {
-    cont = 1;
-  }
-
-  document.getElementById("radio-" + cont).checked = true;
+function closeModal() {
+  modalVideo.pause();
+  modalVideo.removeAttribute('src');
+  modalVideo.load();
+  modal.close();
 }
+modal.querySelector('.modal-close').addEventListener('click', closeModal);
+modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+modal.addEventListener('cancel', event => { event.preventDefault(); closeModal(); });
 
-// End slide testimonials
+document.querySelector('#year').textContent = new Date().getFullYear();
