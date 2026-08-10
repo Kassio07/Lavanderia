@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://higienizacao-lavanderia-nsclean.vercel.app/sitemap.xml
